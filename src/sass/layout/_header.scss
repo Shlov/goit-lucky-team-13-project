@@ -1,0 +1,17 @@
+.header{
+    &__logo-box{
+        width: 66px;
+        height: 52px;
+        background-image: url("../../header-logo.png");
+        background-size: 66px 52px;
+    }
+    &__container{
+        display: flex;
+    }
+    @media screen and (max-width: 768px) {
+        justify-content: space-between;
+    }
+    &__nav-list{
+        display: flex;
+    }
+}
