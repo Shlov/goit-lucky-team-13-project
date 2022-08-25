@@ -1,2 +1,22 @@
+// base
 @import './common';
 @import './example';
+
+// utils
+@import './utils/variables'
+
+// components
+@import './components/container';
+@import './components/section';
+@import './components/button';
+@import './components/subscribe-form';
+@import './components/';
+
+// layout
+@import './layout/header';
+@import './layout/hero';
+@import './layout/offerings';
+@import './layout/favorites';
+@import './layout/customers-say';
+@import './layout/subscribe';
+@import './layout/footer';
