@@ -1,0 +1,59 @@
+.customers {
+    @include section(60px, 60px);
+    @include mq(tab) {
+    @include section(60px, 120px);
+    }
+    @include mq(desk) {
+    @include section(100px, 200px);
+    }
+    background-color: var(--cl-white);
+    background-image: url();
+    @include mq(tab) {
+    background-image: url();
+    }
+    @include mq(desk) {
+    background-image: url();
+    }
+}
+.customers__title{
+    @include fonts(28, 700, 1.179);
+    margin-bottom: 20px;
+    @include mq(tab) {
+    @include fonts(42, 700, 1.167);
+    }
+}
+.customers__lable{
+    @include fonts(14, 400, 1.143);
+    margin-bottom: 32px;
+    @include mq(tab) {
+    @include fonts(16, 400, 1.188);
+    }
+}
+.customers__list{
+    @include centered-flex;
+}
+.customers__item{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background-color: var(--cl-white);
+    border-radius: 0 30 30 30;
+}
+.customers__icon{
+    margin-bottom: 28px;
+}
+.customers__text{
+    @include fonts(16, 700, 1.188);
+    margin-bottom: 40px;
+    @include mq(tab) {
+    @include fonts(18, 700, 1.167);
+    }
+}
+.customer__container{
+    display: flex;
+}
+.customer__wrapper{
+    padding-left: 16px;
+    padding-right: 16px;
+    border-right: 0.854167px solid var(--cl-green-dark);
+}
