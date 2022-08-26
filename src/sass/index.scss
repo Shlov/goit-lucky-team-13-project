@@ -1,15 +1,21 @@
-// base
-@import './common';
-@import './example';
-
 // utils
+@import './utils/modern-normalize';
 @import './utils/variables';
+@import './utils/mixin';
+
+// base
+@import './base/common';
+@import './base/reset';
 
 // components
 @import './components/container';
 @import './components/section';
+@import './components/site-nav';
 @import './components/button';
 @import './components/subscribe-form';
+@import './components/slyder';
+@import './components/modal';
+@import './components/mobile-menu';
 
 // layout
 @import './layout/header';
@@ -19,3 +25,6 @@
 @import './layout/customers-say';
 @import './layout/subscribe';
 @import './layout/footer';
+
+// example
+@import './example';

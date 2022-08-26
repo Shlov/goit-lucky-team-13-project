@@ -1,0 +1,27 @@
+* {
+    // outline: 1px solid teal;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+.lnk {
+    text-decoration:none;
+    color: currentColor;
+}
+
+.lst {
+    list-style-type:none;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
