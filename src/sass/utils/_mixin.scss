@@ -8,7 +8,6 @@
     flex-basis: calc((100% - #{$card-gep} * (#{$card-item} - 1)) / #{$card-item});
 }
 
-
 @mixin fonts($fs: 14px, $fw: 400, $lh: 1.5) {
     font-size: $fs;
     font-weight: $fw;
