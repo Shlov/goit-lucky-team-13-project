@@ -32,7 +32,7 @@
 @mixin mq($range) {
     $mob: 480px;
     $tab: 768px;
-    $desk: 1200px;
+    $desk: 1280px;
 
     @if $range==mob {
         @media screen and (min-width: $mob) {
