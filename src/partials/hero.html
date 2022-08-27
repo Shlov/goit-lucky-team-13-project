@@ -3,12 +3,31 @@
         <div class="hero__wrap-txt">
             <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
             <p class="hero__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-            <button type="button" class="hero__btn btn">Order Now</button>
+            <button type="hero__btn button" class="hero__btn btn">Order Now</button>
         </div>
         <div class="hero__wrap-img">
-            <picture>
-                <img src="./images/hero/hero.jpg" alt="food">
+            <picture class="hero__img img">
+                <source media="(min-width: 1200px)" srcset="
+                ./images/hero/hero-1200-2-1x.webp 1x, 
+                ./images/hero/hero-1200-2-2x.webp 2x
+                " type="image/webp">
+                <source media="(min-width: 1200px)" srcset="
+                ./images/hero/hero-1200-2-1x.jpg 1x, 
+                ./images/hero/hero-1200-2-2x.jpg 2x
+                " type="image/jpeg">
+                <source media="(min-width: 768px)" srcset="
+                ./images/hero/hero-768-3-1x.webp 1x, 
+                ./images/hero/hero-768-3-2x.webp 2x
+                " type="image/webp">
+                <source media="(min-width: 768px)" srcset="
+                ./images/hero/hero-768-3-1x.jpg 1x, 
+                ./images/hero/hero-768-3-2x.jpg 2x
+                " type="image/jpeg">
+                <img class="img" src="./images/hero/hero.jpg" alt="food">
             </picture>
+            <!-- <svg class="hero__icon" width="580" height="580">
+                <use href="./images/symbol.svg#Ellipse-11"></use>
+            </svg> -->
         </div>
     </div>
 </section>
