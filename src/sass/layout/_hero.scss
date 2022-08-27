@@ -1,0 +1,15 @@
+.hero__title {
+    @include fonts(28px, 700, 33px);
+}
+.hero__txt {
+    @include fonts()
+}
+
+.hero__wrap-img {
+    @include mq(mob-only) {
+        display: none;
+    }    
+}
+.hero__container {
+    display: flex;
+}

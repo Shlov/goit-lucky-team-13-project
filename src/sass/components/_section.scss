@@ -1,9 +1,7 @@
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @include section(60px, 60px);
 
-    @media screen and (min-width: 768px){    
-        padding-top: 100px;
-        padding-bottom: 100px;
+    @include mq(tab) {
+        @include section();
     }
 }
