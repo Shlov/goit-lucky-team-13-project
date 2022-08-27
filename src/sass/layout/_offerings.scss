@@ -1,20 +1,17 @@
-
-
 .offerings__title {
-    // color: var(--cl-black);
+  color: var(--cl-almost-black);
 
-    @include fonts(28px, 700, 33px);
+  @include fonts(28px, 700, 33px);
 }
 
 .offerings--position {
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .offerings__lst {
-    @include card-set(28px);
+  @include card-set(28px);
 }
 
-
 .offerings__caption {
-    @include fonts(18px, 700, 21px);
+  @include fonts(18px, 700, 21px);
 }
