@@ -1,5 +1,5 @@
 body {
-    color: var(--cl-black);
+    color: var(--cl-almost-black);
     font-family: var(--main-font);
     @include fonts(14px, 400, 16px);
     @include mq(tab) {
