@@ -15,6 +15,7 @@
     }
     @include mq(desk) {
         max-width: 502px;
+        margin-top: 60px;
     }    
 }
 .hero__txt {
@@ -54,8 +55,6 @@
     width: 608px;
     // height: 580px;
     // overflow:hidden;
-    
-    
     margin: 0 14px 0 auto;
     margin-right: 14px;
     margin-left: auto;
