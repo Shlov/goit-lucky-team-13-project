@@ -1,0 +1,44 @@
+ 
+  .header{
+    width: 100%;
+    @include centered-flex;
+    &__container{
+      width: 100%;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__list {
+      @include fonts(14px, 400, 16px);
+        display: flex;
+        @media screen and (max-width:480px) {
+         display: none; 
+        }
+    }
+    &__nav{
+      display: flex;
+      justify-content: space-between;
+    
+    }
+    &__list-item{
+    margin-right: 28px;
+    display: flex;
+    align-items: center;
+    }
+    &__modal-btn{
+      border: none;
+      cursor: pointer;
+      background-color: rgba(0,0,0,0);
+      @include mq(mob){
+      display: none;
+    }
+    }
+
+    &__order-btn{
+      @media screen and (max-width:480px) {
+        display: none; 
+       }
+       @include fonts(14px, 400, 21px);
+  }
+}
+

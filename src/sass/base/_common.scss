@@ -8,4 +8,7 @@ body {
     @include mq(desk) {
         @include fonts(16px, 400, 1.5);
     }
+    .current{
+        color:var(--cl-green-light);
+      }
 }
