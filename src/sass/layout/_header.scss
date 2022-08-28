@@ -2,7 +2,6 @@
   .header{
     width: 100%;
     @include centered-flex;
-
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 
     &__container{
@@ -12,25 +11,14 @@
       justify-content: space-between;
     }
     &__list {
-
-      @include fonts(14px, 400, 16px);
-
         display: flex;
-        @media screen and (max-width:480px) {
+        @media screen and (max-width:480px) 
+        {
          display: none; 
         }
-    }
+          }
 
-    &__list-link{
-      @include fonts(14px, 400, 16px);
-      transition: color var(--animat);
-      padding: 10px 0;
-
-    }
-    &__list-link:hover
-    {
-      color: var(--cl-green-light);
-    }
+   
     &__nav{
       display: flex;
       justify-content: space-between;
@@ -60,9 +48,7 @@
       fill: var(--cl-green-dark);
       transition: fill var(--animat);
     }
-
-
-    &__order-btn{
+      &__order-btn{
       @media screen and (max-width:480px) {
         display: none; 
        }
@@ -73,4 +59,13 @@
           }}
 
 }
+
+.list-link{
+  display: inline-block;
+  @include fonts(14px, 400, 16px);
+  transition: color var(--animat);
+  &:hover{  
+  color: var(--cl-green-light);
+          }
+          }
 
