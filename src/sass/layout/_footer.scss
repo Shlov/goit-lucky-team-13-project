@@ -1,70 +1,161 @@
 .footer
-{display: block;
-&__container
-{  padding: 60px 20px;
-    @include mq(mob-only)
-    {
-        @include mq(mob);
-        height: 619px;
-        background-image: url('/src/images/footer/footer-480-1x.jpg');
-        background-size: cover;
+{
+    display: block;
+    &__container
+    {  padding: 60px 20px;
+        @include mq(mob-only)
+        {
+            @include mq(mob);
+            height: 619px;
+            // background-image: url('/src/images/footer/footer-480-1x.jpg');
+            background-size: cover;
+        }
+        border-top: 2px solid black;
+    }    
+    &__nav{
+        display: flex;
+        margin-bottom: 40px;
+        @media screen and (max-width:480px)
+         {
+            justify-content: space-between;
+        }
+       
+        @include mq(mob){
+            align-items: center;
+        }
+        }
+   &__logo{
+        margin-right: 60px;
     }
-    border-top: 2px solid black;
-}    
-&__nav{
-    display: flex;
-    margin-bottom: 40px;
-}
-&__logo{
-    margin-right: 60px;
-}
-&__list{
+    &__logo-link{
+        @include mq(tab)
+        {
+        margin-right: 145px;
+        }
+    }
+    &__list {
     justify-content: center;
-    margin-right: 100px;
-}
-&__list-item:not(:last-child){
-    margin-bottom: 20px;
-}
-&__list-pivacy{
-    @include centered-flex();
-    margin-bottom: 40px;
-}
-&__list-pivacy-item:not(:last-child){
-margin-right: 32px;
-}
-   &__policy{
+    display: flex;
+    @media screen and (max-width:480px)
+    {
+        flex-direction: column;
+    }
+   
+      
+    }   
+    
+        
+    &__list-item:not(:last-child)
+    {   
+        @include mq(mob){
+        margin-right:  28px;
+                        }
+        @media screen and (max-width:480px) 
+        {
+            margin-bottom: 28px;
+        }           
+    }
+    &__list-pivacy{
+        @include centered-flex();
+        margin-bottom: 40px;
+    }
+    &__list-pivacy-item:not(:last-child){
+    margin-right: 32px;
+    }
+    &__privacy-link{
+        cursor: pointer;
+        color: var(--cl-green-light);
+    }
+    &__list-pivacy-link{
+        cursor: pointer;
+        color: var(--cl-green-light);
+    }
+    &__policy{
+        @include mq(tab)
+        {
+            display: flex;
+            margin-left: auto;
+            justify-content: flex-end;
+        }
+        
         display: block;
         margin-bottom: 60px;
-        
     }
-
-&__reserved{
+    &__reserved{
+        @include mq(tab){
+            margin-left: auto;
+        }
     text-align: center;
-    margin-left: 20px;
-
-}
+                }
 }
 .subscribe{
+    @include mq(tab)
+    {
+        margin-left: auto;
+    }
     margin-bottom: 20px;
+    &__form{
+        display: flex;
+       @media screen and ( max-width:480px) {
+            align-items: flex-end;
+             flex-direction: column;
+        }
+    } 
     &__title{
         margin-bottom: 12px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
     }
     &__input{
         background: var(----cl-white);
         border: 0.854167px solid #FFE550;
         border-radius: 30px;
         margin-bottom: 20px;
-        width: 300px;
+        width: 100%;
         height: 45px;
         padding: 12px;
+        transition: border-color var(--animat);
+        &:hover{
+            border-color:var(--cl-green-dark);
+        }
+        @include mq(mob)
+        {
+            width: 280px;
+        }
     }
     &__btn{
-        display: block;
+        display: inline;
+        @media screen and(max-width:480px) 
+        {
+            
+        }
+        @include mq(mob){
+            margin-left: 12px;
+        }
         background: #FFFFFF;
-        border: 0.854167px solid #7EB101;
+        border: 0.854167px solid var(--cl-green-dark);
         border-radius: 30px;
         width: 100px;
         height: 40px;
-        
+        &:hover{
+            background-color:var(--cl-yellow);
+          
+        }
+        transition: background-color var(--animat);
+    }
+    
+}
+.class{
+    @include mq(tab)
+    {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+.policy{
+    @include mq(tab)
+    {
+        display: flex;
     }
 }
