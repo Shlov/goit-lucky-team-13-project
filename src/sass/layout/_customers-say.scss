@@ -1,4 +1,5 @@
 .customers {
+    position: relative;
     @include section(60px, 60px);
     @include mq(tab) {
     @include section(60px, 120px);
@@ -11,16 +12,33 @@
     margin-left: auto;
     background-color: var(--cl-white);
     background-image: url("../images/customers/Rectangle701.png");
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image:  url('../images/customers/Rectangle702.png');
+    }
     @include mq(tab) {
     background-image: url("../images/customers/Rectangle719.png");
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/customers/Rectangle720.png');
+    }
     }
     @include mq(desk) {
     background-image: url("../images/customers/Rectangle706.png");
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/customers/Rectangle707.png');
+    }
 }
-    
+    @include mq(mob-only){
+    background-size: cover    
+    }
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    ;
 }
 .customers__title{
     @include fonts(28, 700, 1.179);
