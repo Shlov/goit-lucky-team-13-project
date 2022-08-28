@@ -9,7 +9,6 @@
 }
 
 .offerings__lst {
- 
   @include card-set(28px);
   // @include centered-flex;
 }
@@ -25,7 +24,7 @@
   // @include card-item ();
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -45,16 +44,48 @@
   }
 }
 
+.offerings__thumb {
+  display: flex;
+  align-items: center;
+}
+
 .offerings__btn {
-  min-width: 100px;
-  height: 32px;
+  // padding: 10px 22px;
+  @include fonts(13px, 500, 1.5);
   background-color: var(--cl-white);
   color: var(--cl-almost-black);
-  border-radius: 16px;
-
-  
   border: 2px solid var(--cl-green-dark);
-  cursor: pointer;
 
+  &::hover,
+  &::focus {
+    border: 2px solid var(--cl-green-btn-dark);
+  }
+}
+
+.offerings__btn--position {
+  margin-right: 24px;
+}
+
+.offerings__wrap {
+  @include centered-flex;
+  gap: 3.42px;
+}
+
+.offerings__lnk {
+  display: block;
+  @include fonts(13px, 400, 1.5);
+  color: var(--cl-black);
+}
+
+.offerings__icon {
+  display: block;
+
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   
+  
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
 }
