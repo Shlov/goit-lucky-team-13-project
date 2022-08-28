@@ -2,6 +2,9 @@
   .header{
     width: 100%;
     @include centered-flex;
+
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+
     &__container{
       width: 100%;
       align-items: center;
@@ -9,16 +12,30 @@
       justify-content: space-between;
     }
     &__list {
+
       @include fonts(14px, 400, 16px);
+
         display: flex;
         @media screen and (max-width:480px) {
          display: none; 
         }
     }
+
+    &__list-link{
+      @include fonts(14px, 400, 16px);
+      transition: color var(--animat);
+      padding: 10px 0;
+
+    }
+    &__list-link:hover
+    {
+      color: var(--cl-green-light);
+    }
     &__nav{
       display: flex;
       justify-content: space-between;
-    
+      align-items: center;
+
     }
     &__list-item{
     margin-right: 28px;
@@ -29,16 +46,31 @@
       border: none;
       cursor: pointer;
       background-color: rgba(0,0,0,0);
-      @include mq(mob){
+
+      @include mq(mob)
+      {
       display: none;
+      }
+     &:active .header__modal-btn-svg{
+      fill: var(--cl-yellow);
     }
     }
+  
+    &__modal-btn-svg{
+      fill: var(--cl-green-dark);
+      transition: fill var(--animat);
+    }
+
 
     &__order-btn{
       @media screen and (max-width:480px) {
         display: none; 
        }
        @include fonts(14px, 400, 21px);
-  }
+
+          &:hover{
+            background-color: var(--cl-green-btn-light);
+          }}
+
 }
 
