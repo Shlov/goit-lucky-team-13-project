@@ -1,6 +1,6 @@
-.hero__wrap-txt {
+// .hero__wrap-txt {
 
-}
+// }
 .hero__title {
     @include fonts(28px, 700, 33px);
     @include mq(tab){
@@ -51,14 +51,18 @@
 }
 .hero__wrap-img {
     position: relative;
-    width: 580px;
-    height: 580px;
+    // width: 580px;
+    // height: 580px;
     overflow:hidden;
     border-radius: 50%;
     border: 26px solid #FFE550;
     margin: 0 14px 0 auto;
     margin-right: 14px;
     margin-left: auto;
+    @include mq(tab-only) {
+        width: 320px;
+        height: 320px;
+    }
 }
 .hero__img {
     position: absolute;
@@ -71,3 +75,8 @@
 //     top: 0;
 //     left: 0;
 // }
+
+.swiper {
+    width: 580px;
+    height: 580px;
+  }
