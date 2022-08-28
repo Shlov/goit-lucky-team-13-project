@@ -1,8 +1,35 @@
+// .hero__wrap-txt {
+
+// }
 .hero__title {
     @include fonts(28px, 700, 33px);
+    @include mq(tab){
+        @include fonts(42px, 700, 1.2)
+    }
+    @include mq(desk){
+        @include fonts(48px, 700, 1.2)
+    }
+    margin-bottom: 28px;
+    @include mq(tab-only) {
+        margin-bottom: 44px;
+    }
+    @include mq(desk) {
+        max-width: 502px;
+    }    
 }
 .hero__txt {
-    @include fonts()
+    @include fonts();
+    margin-bottom: 28px;
+    @include mq(tab) {
+        margin-bottom: 40px;
+    }
+
+    @include mq(tab-only) {
+        max-width: 336px;
+    }
+    @include mq(desk) {
+        max-width: 502px;
+    }
 }
 
 .hero__wrap-img {
@@ -12,4 +39,74 @@
 }
 .hero__container {
     display: flex;
+}
+.hero__btn {
+    min-width: 100px;
+    height: 32px;
+    background-color: var(--cl-green-light);
+    border-radius: 16px;
+    color: var(--cl-almost-black);
+    border: none;
+    cursor: pointer;
+}
+.hero__wrap-img {
+    position: relative;
+    width: 608px;
+    // height: 580px;
+    // overflow:hidden;
+    
+    
+    margin: 0 14px 0 auto;
+    margin-right: 14px;
+    margin-left: auto;
+    @include mq(tab-only) {
+        width: 320px;
+        height: 320px;
+    }
+}
+.hero__circle {
+    border: 26px solid #FFE550;
+    border-radius: 50%;
+    width: 580px;
+    height: 580px;
+}
+.hero__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+// .hero__icon {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+// }
+
+.swiper {
+    
+  }
+.swiper-button-next,
+.swiper-button-prev {
+    width: 48px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+}
+
+.swiper-button-disabled {
+
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 0px;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 0px;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: '';
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: '';
 }

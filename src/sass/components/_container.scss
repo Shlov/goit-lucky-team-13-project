@@ -10,6 +10,10 @@
     @include mq(mob) {
         width: 480px;    
     }
+    @include mq(mob-only)
+    {
+        padding-top: 20px;
+    }
 
     @include mq(tab) {
         width: 768px;
@@ -18,8 +22,8 @@
     }
 
     @include mq(desk) {
-        width: 1200px;
+        width: 1280px;
         padding-left: 16px;
-        padding-right: 16x;
+        padding-right: 16px;
     }
 }
