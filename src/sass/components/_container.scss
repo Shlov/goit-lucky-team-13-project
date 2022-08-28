@@ -4,10 +4,15 @@
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 10px;
     
     
     @include mq(mob) {
         width: 480px;    
+    }
+    @include mq(mob-only)
+    {
+        padding-top: 20px;
     }
 
     @include mq(tab) {
