@@ -1,3 +1,15 @@
+.hero {
+    @include section(60px, 60px);
+
+    @include mq(tab) {
+        @include section(14px, 0);
+    }
+}
+
+.hero__container {
+    position: relative;
+}
+
 .hero__wrap-txt {
     position: relative;
 }
@@ -34,16 +46,6 @@
     }
 }
 
-.hero__wrap-img {
-    @include mq(mob-only) {
-        display: none;
-    }   
-    @include mq(tab-only) {  
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-}
 .hero__container {
     display: flex;
 }
@@ -59,12 +61,18 @@
 .hero__wrap-img {
     position: relative;
     width: 608px;
-    margin: 0 14px 0 auto;
-    margin-right: 14px;
     margin-left: auto;
     @include mq(tab-only) {
+           
+    }
+    @include mq(mob-only) {
+        display: none;
+    }   
+    @include mq(tab-only) {  
+        position: absolute;
+        right: 32px;
+        top: 90px;
         width: 336px;
-        margin-top: 90px;    
     }
 }
 .hero__circle {
@@ -74,7 +82,8 @@
     height: 580px;
     @include mq(tab-only) {
         width: 320px;
-        height: 320px;    
+        height: 320px;
+        border: 14px solid #FFE550; 
     }
 }
 .hero__img {
