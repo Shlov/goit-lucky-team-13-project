@@ -1,23 +1,23 @@
 
 .nav{
     &__header
-    {
+    {  margin-right: 30px;
       display: flex;
       @media screen and (max-width:768px) 
       {
        display: none; 
       }
-      margin-right: 30px;
+      
     }
     &__footer
     {
-        @include mq(tab)
+        @include mq(mob)
         {
             display: flex;
         }
         margin-left: 114px;
     }
-    &__list-item{
+    &__list-item:not(:last-child){
     margin-right: 28px;
     display: flex;
     align-items: center;
