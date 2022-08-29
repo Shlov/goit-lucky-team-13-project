@@ -147,7 +147,7 @@
       border-radius: 50%;
       background-color: var(--cl-white);
     }
-
+    
     @for $i from 1 through 2 {
       &:nth-child(2n + #{$i}) {
         &::before {
