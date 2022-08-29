@@ -14,11 +14,15 @@
     }
     &__footer
     {
+
+
         @include mq(mob)
+
         {
             display: flex;
         }
         margin-left: 114px;
+
     }
     &__list-item:not(:last-child){
     margin-right: 28px;
@@ -33,5 +37,5 @@
     &:hover{  
     color: var(--cl-green-light);
            }
-                }
+        }
     }
