@@ -1,6 +1,4 @@
 .offerings {
-  min-width: 320px;
-
   @include mq(tab) {
     @include section(150px, 100px);
   }
