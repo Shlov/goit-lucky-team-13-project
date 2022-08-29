@@ -3,6 +3,10 @@
 
     @include mq(tab) {
         @include section(14px, 0);
+        margin-bottom: -100px;
+    }
+    @include mq(desk) {
+        margin-bottom: -100px;
     }
 }
 
@@ -50,13 +54,8 @@
     display: flex;
 }
 .hero__btn {
-    min-width: 100px;
-    height: 32px;
-    background-color: var(--cl-green-light);
-    border-radius: 16px;
-    color: var(--cl-almost-black);
-    border: none;
-    cursor: pointer;
+    
+    
 }
 .hero__wrap-img {
     position: relative;
