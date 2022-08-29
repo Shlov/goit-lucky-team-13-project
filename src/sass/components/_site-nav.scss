@@ -15,7 +15,12 @@
         {
             display: flex;
         }
-        margin-left: 114px;
+        @media screen and (max-width:480px) {
+            margin-left: 114px;
+          
+
+        }
+        
     }
     &__list-item:not(:last-child){
     margin-right: 28px;
