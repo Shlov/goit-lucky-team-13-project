@@ -1,8 +1,11 @@
 
 .footer
+
 {   
  &__container
     {    @media screen and (max-width:768px)
+
+
         {   
             background-image:
             url('/src/images/footer/nik/footer-480-1-1x.jpg'),
@@ -17,6 +20,7 @@
             100% 25px,
             50% 100%,
             0 130px;
+
             background-repeat: no-repeat; 
        }
        @media screen and (max-width:1280px)
@@ -39,6 +43,7 @@
       }
          min-width: 380px;
         padding: 60px 20px;
+
         border-top: 2px solid black;
     }    
     @media screen and (min-width:1280px)
@@ -52,7 +57,7 @@
     &__nav{
         display: flex;
         margin-bottom: 40px;
-        
+
         @include mq(tab)
         {
             align-items: center;
@@ -110,6 +115,7 @@
             margin-left: auto;
             margin-bottom: 100px;
         }
+
         @include mq(desk)
         {
             display: flex;
