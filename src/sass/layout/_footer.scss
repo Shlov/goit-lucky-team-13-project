@@ -1,8 +1,18 @@
 .footer
-{
+{   
+    @media screen and (max-width:480px)
+     {
+        
+        @media  (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) 
+    {
+     }}
+    // background-image: url('/src/images/footer/');
     display: block;
     &__container
-    {  padding: 60px 20px;
+    {   min-width: 380px;
+        padding: 60px 20px;
         @include mq(mob-only)
         {
             @include mq(mob);
@@ -15,14 +25,15 @@
     &__nav{
         display: flex;
         margin-bottom: 40px;
-        @media screen and (max-width:480px)
+        @media screen and (max-width:768px)
          {
             justify-content: space-between;
         }
-       
-        @include mq(mob){
+        @include mq(tab)
+        {
             align-items: center;
         }
+       
         }
    &__logo{
         margin-right: 60px;
@@ -71,15 +82,17 @@
         color: var(--cl-green-light);
     }
     &__policy{
-        @include mq(tab)
+      
+        display: flex; 
+        margin-bottom: 60px;
+        @include mq(desk)
         {
             display: flex;
             margin-left: auto;
-            justify-content: flex-end;
+          
         }
+
         
-        display: block;
-        margin-bottom: 60px;
     }
     &__reserved{
         @include mq(tab){
@@ -147,11 +160,14 @@
     
 }
 .class{
-    @include mq(tab)
+    @include mq(desk)
     {
         display: flex;
         align-items: flex-start;
     }
+}
+.class2{
+    margin-left: auto;
 }
 .policy{
     @include mq(tab)

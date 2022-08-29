@@ -5,7 +5,6 @@
     border: none;
     color: var(--cl-almost-black);
     background-color: var(--cl-green-light);
-    @include fonts(13px, 500, 1.5);
     cursor: pointer;
     transition: background-color var(--animat);
 }
