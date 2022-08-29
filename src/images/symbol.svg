@@ -63,5 +63,13 @@
 <symbol id="Rectangle-719" viewBox="0 0 44 32">
 <path fill="#ffe550" style="fill: var(--color1, #ffe550)" d="M0 30.417c15.89-6.339 35.229 9.255 44.361-3.822v-26.595h-44.361v30.417z"></path>
 </symbol>
+<symbol id="chevron-down" viewBox="0 0 34 32">
+<path d="M21.931 15.71c0.163 0.163 0.264 0.389 0.264 0.638s-0.101 0.474-0.264 0.638v0l-9.207 9.209c-0.163 0.164-0.389 0.265-0.639 0.265s-0.475-0.101-0.639-0.265v0l-0.425-0.425c-0.164-0.164-0.266-0.39-0.266-0.64s0.102-0.476 0.266-0.64l8.142-8.139-8.142-8.144c-0.164-0.163-0.265-0.389-0.265-0.639s0.101-0.475 0.265-0.639v0l0.425-0.425c0.164-0.164 0.39-0.266 0.64-0.266s0.476 0.102 0.64 0.266l9.205 9.207z"></path>
+</symbol>
+<symbol id="icon-exclamation-mark" viewBox="0 0 32 32">
+<path fill="none" stroke="#ff705d" style="stroke: var(--color1, #ff705d)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M16 11.429v6.857"></path>
+<path fill="none" stroke="#ff705d" style="stroke: var(--color1, #ff705d)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M16.002 26.286c0.631 0 1.143-0.512 1.143-1.143s-0.512-1.143-1.143-1.143c-0.631 0-1.143 0.512-1.143 1.143s0.512 1.143 1.143 1.143z"></path>
+<path fill="none" stroke="#ff705d" style="stroke: var(--color1, #ff705d)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M18.036 2.4c-0.192-0.374-0.483-0.689-0.842-0.908s-0.771-0.336-1.192-0.336c-0.421 0-0.833 0.116-1.192 0.336s-0.65 0.534-0.842 0.908l-12.571 25.143c-0.175 0.348-0.259 0.735-0.242 1.124s0.132 0.768 0.336 1.1c0.204 0.332 0.489 0.606 0.829 0.797s0.723 0.291 1.112 0.293h25.143c0.39-0.001 0.772-0.102 1.112-0.293s0.625-0.465 0.829-0.797c0.204-0.332 0.319-0.711 0.336-1.1s-0.067-0.776-0.243-1.124l-12.571-25.143z"></path>
+</symbol>
 </defs>
 </svg>

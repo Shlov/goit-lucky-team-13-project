@@ -1,102 +1,100 @@
-.hero__wrap-txt {
-    position: relative;
-}
-.hero__title {
-    @include fonts(28px, 700, 33px);
-    @include mq(tab){
-        @include fonts(42px, 700, 1.2)
-    }
-    @include mq(desk){
-        @include fonts(48px, 700, 1.2)
-    }
-    margin-bottom: 28px;
-    @include mq(tab-only) {
-        max-width: 500px;
-        margin-bottom: 44px;
-    }
-    @include mq(desk) {
-        max-width: 502px;
-        margin-top: 60px;
-    }    
-}
-.hero__txt {
-    @include fonts();
-    margin-bottom: 28px;
+.hero {
+    @include section(60px, 60px);
     @include mq(tab) {
-        margin-bottom: 40px;
-    }
-
-    @include mq(tab-only) {
-        max-width: 336px;
+        @include section(14px, 0);
     }
     @include mq(desk) {
-        max-width: 502px;
+        margin-bottom: -100px;
     }
-}
 
-.hero__wrap-img {
-    @include mq(mob-only) {
-        display: none;
-    }   
-    @include mq(tab-only) {  
-        position: absolute;
-        right: 0;
-        top: 0;
+    &__container {
+        position: relative;
+        display: flex;
     }
-}
-.hero__container {
-    display: flex;
-}
-.hero__btn {
-    min-width: 100px;
-    height: 32px;
-    background-color: var(--cl-green-light);
-    border-radius: 16px;
-    color: var(--cl-almost-black);
-    border: none;
-    cursor: pointer;
-}
-.hero__wrap-img {
-    position: relative;
-    width: 608px;
-    margin: 0 14px 0 auto;
-    margin-right: 14px;
-    margin-left: auto;
-    @include mq(tab-only) {
-        width: 336px;
-        margin-top: 90px;    
+    &__wrap-txt {
+        position: relative;
     }
-}
-.hero__circle {
-    border: 26px solid #FFE550;
-    border-radius: 50%;
-    width: 580px;
-    height: 580px;
-    @include mq(tab-only) {
-        width: 320px;
-        height: 320px;    
-    }
-}
-.hero__img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);   
-}
-.hero__icon {
-    display: none;
-    &--desk {
+    &__title {
+        @include fonts(28px, 700, 33px);
+        @include mq(tab){
+            @include fonts(42px, 700, 1.2)
+        }
+        @include mq(desk){
+            @include fonts(48px, 700, 1.2)
+        }
+        margin-bottom: 28px;
+        @include mq(tab-only) {
+            max-width: 500px;
+            margin-bottom: 44px;
+        }
         @include mq(desk) {
-            display: block;
+            max-width: 502px;
+            margin-top: 60px;
         }    
     }
-    &--tab {
+    &__txt {
+        @include fonts();
+        margin-bottom: 28px;
+        @include mq(tab) {
+            margin-bottom: 40px;
+        }
+    
         @include mq(tab-only) {
-            display: block;
+            max-width: 336px;
+        }
+        @include mq(desk) {
+            max-width: 502px;
+        }
+    }
+    &__wrap-img {
+        position: relative;
+        width: 608px;
+        margin-left: auto;
+        user-select: none;
+        @include mq(mob-only) {
+            display: none;
+        }   
+        @include mq(tab-only) {  
+            position: absolute;
+            right: 32px;
+            top: 90px;
+            width: 336px;
+        }
+    }
+    &__circle {
+        border: 26px solid #FFE550;
+        border-radius: 50%;
+        width: 580px;
+        height: 580px;
+        @include mq(tab-only) {
+            width: 320px;
+            height: 320px;
+            border: 14px solid #FFE550; 
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);   
+    }
+    &__icon {
+        display: none;
+        &--desk {
+            @include mq(desk) {
+                display: block;
+            }    
+        }
+        &--tab {
+            @include mq(tab-only) {
+                display: block;
+            }
         }
     }
 }
 
+
+// Classes slider
 .swiper-button-next,
 .swiper-button-prev {
     width: 48px;
@@ -110,11 +108,9 @@
         border-radius: 4px;
     }
 }
-
 .swiper-button-disabled {
     opacity: .6;
 }
-
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
     left: 0px;
 }
