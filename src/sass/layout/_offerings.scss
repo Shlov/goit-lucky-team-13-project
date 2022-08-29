@@ -67,6 +67,7 @@
 .offerings__img--position {
   margin-bottom: 60px;
   @include mq(desk) {
+    margin-bottom: 0;
     margin-right: 90px;
   }
 }
