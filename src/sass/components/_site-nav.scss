@@ -1,13 +1,14 @@
 
 .nav{
     &__header
-
-    {  margin-right: 30px;
+    {  
       display: flex;
+      @include mq(tab) {
+        margin-right: 30px;
+      }
       @media screen and (max-width:768px) 
       {
-       display: none; 
-
+    //    display: none; 
       }
       
     }
@@ -36,5 +37,5 @@
     &:hover{  
     color: var(--cl-green-light);
            }
-                }
+        }
     }
