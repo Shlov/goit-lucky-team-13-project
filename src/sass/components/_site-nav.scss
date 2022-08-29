@@ -11,7 +11,7 @@
     }
     &__footer
     {
-        @include mq(mob)
+        @include mq(tab)
         {
             display: flex;
         }
