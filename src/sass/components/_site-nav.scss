@@ -1,17 +1,21 @@
 
 .nav{
     &__header
+
     {  margin-right: 30px;
       display: flex;
       @media screen and (max-width:768px) 
       {
        display: none; 
+
       }
       
     }
     &__footer
     {
-        @include mq(tab)
+
+        @include mq(mob)
+
         {
             display: flex;
         }

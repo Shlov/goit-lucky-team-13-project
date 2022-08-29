@@ -27,6 +27,7 @@
 
 
         min-width: 380px;
+
         padding: 60px 20px;
         @include mq(mob-only)
         {
@@ -38,7 +39,7 @@
     &__nav{
         display: flex;
         margin-bottom: 40px;
-        
+
         @include mq(tab)
         {
             align-items: center;
@@ -92,7 +93,6 @@
         color: var(--cl-green-light);
     }
     &__policy{
-       
 
         display: flex; 
         margin-bottom: 60px;

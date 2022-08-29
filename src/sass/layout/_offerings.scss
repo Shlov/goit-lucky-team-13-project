@@ -1,14 +1,4 @@
 .offerings {
-  min-width: 320px;
-
-  @include mq(tab) {
-    @include section(150px, 100px);
-  }
-
-  @include mq(desk) {
-    @include section(177px, 43px);
-  }
-
   background-color: var(--cl-white);
 
   // mobile screen 320px
@@ -147,7 +137,7 @@
       border-radius: 50%;
       background-color: var(--cl-white);
     }
-    
+
     @for $i from 1 through 2 {
       &:nth-child(2n + #{$i}) {
         &::before {
@@ -163,13 +153,13 @@
   }
 
   &__btn--order {
-    @include fonts(13px, 500, 1.5);
     background-color: var(--cl-white);
     color: var(--cl-almost-black);
     border: 2px solid var(--cl-green-dark);
 
-    &::hover,
-    &::focus {
+    &:hover,
+    &:focus {
+      background-color: var(--cl-white);
       border: 2px solid var(--cl-green-btn-dark);
     }
   }
