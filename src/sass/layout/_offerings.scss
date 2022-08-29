@@ -62,7 +62,9 @@
   }
 
   &__content {
+    @include mq(desk) {
     max-width: 573px;
+  }
   }
 
   &__title--position {
@@ -75,9 +77,9 @@
   }
 
   &__desc {
-    max-width: 500px;
     @include mq(tab) {
       @include fonts(16px, 400, 18.75px);
+      max-width: 500px;
     }
 
     @include mq(desk) {
@@ -99,6 +101,11 @@
       gap: 116px;
       flex-wrap: nowrap;
     }
+
+    @include mq(desk) {
+      gap: 63px;
+    }
+
 
     &--position {
       margin-bottom: 28px;
@@ -123,7 +130,7 @@
 
   &__item {
     position: relative;
-    @include card-set(8px);
+    @include card-set(16px);
     padding-top: 56px;
 
     &::before {
@@ -171,16 +178,24 @@
   &__btn--read {
     @include centered-flex;
     gap: 3.42px;
+
+    @include fonts(13.67px, 400, 20.5px);
+
     background-color: var(--cl-yellow);
     color: var(--cl-almost-black);
 
     @include mq(desk) {
       display: none;
     }
+
+    &:hover,
+    &:focus {
+      background-color: var(--cl-yellow);
+      border: 2px solid var(--cl-green-btn-dark);
+    }
   }
 
   &__lnk {
-    @include fonts(13.67px, 400, 20.5px);
     color: var(--cl-black);
   }
 

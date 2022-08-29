@@ -3,6 +3,9 @@
     height: 32px;
     border-radius: 16px;
     border: none;
+
+    @include fonts(13px, 500, 19.5px);
+
     color: var(--cl-almost-black);
     background-color: var(--cl-green-light);
     cursor: pointer;
