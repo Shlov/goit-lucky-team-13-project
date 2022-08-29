@@ -1,6 +1,22 @@
-// .hero__wrap-txt {
+.hero {
+    @include section(60px, 60px);
 
-// }
+    @include mq(tab) {
+        @include section(14px, 0);
+        margin-bottom: -100px;
+    }
+    @include mq(desk) {
+        margin-bottom: -100px;
+    }
+}
+
+.hero__container {
+    position: relative;
+}
+
+.hero__wrap-txt {
+    position: relative;
+}
 .hero__title {
     @include fonts(28px, 700, 33px);
     @include mq(tab){
@@ -11,6 +27,7 @@
     }
     margin-bottom: 28px;
     @include mq(tab-only) {
+        max-width: 500px;
         margin-bottom: 44px;
     }
     @include mq(desk) {
@@ -33,34 +50,28 @@
     }
 }
 
-.hero__wrap-img {
-    @include mq(mob-only) {
-        display: none;
-    }    
-}
 .hero__container {
     display: flex;
 }
 .hero__btn {
-    min-width: 100px;
-    height: 32px;
-    background-color: var(--cl-green-light);
-    border-radius: 16px;
-    color: var(--cl-almost-black);
-    border: none;
-    cursor: pointer;
+    
+    
 }
 .hero__wrap-img {
     position: relative;
     width: 608px;
-    // height: 580px;
-    // overflow:hidden;
-    margin: 0 14px 0 auto;
-    margin-right: 14px;
     margin-left: auto;
     @include mq(tab-only) {
-        width: 320px;
-        height: 320px;
+           
+    }
+    @include mq(mob-only) {
+        display: none;
+    }   
+    @include mq(tab-only) {  
+        position: absolute;
+        right: 32px;
+        top: 90px;
+        width: 336px;
     }
 }
 .hero__circle {
@@ -68,6 +79,11 @@
     border-radius: 50%;
     width: 580px;
     height: 580px;
+    @include mq(tab-only) {
+        width: 320px;
+        height: 320px;
+        border: 14px solid #FFE550; 
+    }
 }
 .hero__img {
     position: absolute;
@@ -75,15 +91,20 @@
     left: 50%;
     transform: translate(-50%, -50%);   
 }
-// .hero__icon {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-// }
+.hero__icon {
+    display: none;
+    &--desk {
+        @include mq(desk) {
+            display: block;
+        }    
+    }
+    &--tab {
+        @include mq(tab-only) {
+            display: block;
+        }
+    }
+}
 
-.swiper {
-    
-  }
 .swiper-button-next,
 .swiper-button-prev {
     width: 48px;
@@ -91,10 +112,15 @@
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    @include mq(tab-only) {
+        width: 38px;
+        height: 34px;
+        border-radius: 4px;
+    }
 }
 
 .swiper-button-disabled {
-
+    opacity: .6;
 }
 
 .swiper-button-prev, .swiper-rtl .swiper-button-next {

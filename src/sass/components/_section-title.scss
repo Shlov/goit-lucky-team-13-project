@@ -1,0 +1,6 @@
+.section-title {
+    @include fonts(28px, 700, 33px);
+    @include mq(tab) {
+        @include fonts(42px, 700, 49px);
+    }    
+}
