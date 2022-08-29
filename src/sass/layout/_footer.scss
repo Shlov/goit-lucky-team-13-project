@@ -1,28 +1,68 @@
+
 .footer
-{
-    display: block;
-    &__container
-    {  padding: 60px 20px;
-        @include mq(mob-only)
-        {
-            @include mq(mob);
-            height: 619px;
-            // background-image: url('/src/images/footer/footer-480-1x.jpg');
-            background-size: cover;
-        }
+
+{   
+ &__container
+    {    @media screen and (max-width:768px)
+
+
+        {   
+            background-image:
+            url('/src/images/footer/nik/footer-480-1-1x.jpg'),
+            url('/src/images/footer/nik/footer-480-2-1x.jpg'),
+            url('/src/images/footer/nik/footer-480-3-1x.jpg')
+            ;
+            background-size:
+             110px 300px,
+             253px 66px,
+             110px 105px;
+            background-position:
+            100% 25px,
+            50% 100%,
+            0 130px;
+
+            background-repeat: no-repeat; 
+       }
+       @media screen and (max-width:1280px)
+       {   
+           background-image:
+           url('/src/images/footer/nik/footer-480-1-1x.jpg'),
+        
+           url('/src/images/footer/nik/footer-768-1-1x.jpg');
+
+       
+           background-size:
+           180px 365px,
+           100% ;
+            
+           background-position:
+           100% 25px,
+           0 100%;
+      
+           background-repeat: no-repeat; 
+      }
+         min-width: 380px;
+        padding: 60px 20px;
+
         border-top: 2px solid black;
     }    
+    @media screen and (min-width:1280px)
+       {
+        background-image: url('/src/images/footer/nik/footer-1280-1-1x.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0 100%;
+       }
+
     &__nav{
         display: flex;
         margin-bottom: 40px;
-        @media screen and (max-width:480px)
-         {
-            justify-content: space-between;
-        }
-       
-        @include mq(mob){
+
+        @include mq(tab)
+        {
             align-items: center;
         }
+       
         }
    &__logo{
         margin-right: 60px;
@@ -40,11 +80,7 @@
     {
         flex-direction: column;
     }
-   
-      
-    }   
-    
-        
+    }        
     &__list-item:not(:last-child)
     {   
         @include mq(mob){
@@ -56,7 +92,7 @@
         }           
     }
     &__list-pivacy{
-        @include centered-flex();
+        display: flex;
         margin-bottom: 40px;
     }
     &__list-pivacy-item:not(:last-child){
@@ -71,15 +107,23 @@
         color: var(--cl-green-light);
     }
     &__policy{
-        @include mq(tab)
+     display: flex; 
+        margin-bottom: 60px;
+        @include mq(mob)
         {
             display: flex;
             margin-left: auto;
-            justify-content: flex-end;
+            margin-bottom: 100px;
         }
+
+        @include mq(desk)
+        {
+            display: flex;
+            margin-left: auto;
+          
+        }
+
         
-        display: block;
-        margin-bottom: 60px;
     }
     &__reserved{
         @include mq(tab){
@@ -147,11 +191,15 @@
     
 }
 .class{
-    @include mq(tab)
+    @include mq(desk)
     {
         display: flex;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
+}
+.class2{
+    margin-left: auto;
 }
 .policy{
     @include mq(tab)

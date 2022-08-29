@@ -1,0 +1,41 @@
+
+.nav{
+    &__header
+    {  
+      display: flex;
+      @include mq(tab) {
+        margin-right: 30px;
+      }
+      @media screen and (max-width:768px) 
+      {
+    //    display: none; 
+      }
+      
+    }
+    &__footer
+    {
+
+
+        @include mq(mob)
+
+        {
+            display: flex;
+        }
+        margin-left: 114px;
+
+    }
+    &__list-item:not(:last-child){
+    margin-right: 28px;
+    display: flex;
+    align-items: center;
+    }
+    &__list-link{
+    padding: 28px 0;
+    display: inline-block;
+    @include fonts(14px, 400, 16px);
+    transition: color var(--animat);
+    &:hover{  
+    color: var(--cl-green-light);
+           }
+        }
+    }
