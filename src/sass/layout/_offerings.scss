@@ -1,5 +1,6 @@
 .offerings {
   min-width: 320px;
+  min-width: 1920px;
 
   @include mq(tab) {
     @include section(150px, 100px);
@@ -9,58 +10,58 @@
     @include section(177px, 43px);
   }
 
-  background-color: var(--cl-white);
-
-  // mobile screen 320px
-  background-image: url(../images/offerings/bg-offerings@1x_320.png);
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/offerings/bg-offerings@2x_320.png);
-  }
-
-  // mobile screen 480px
-  @include mq(mob-only) {
-    background-image: url(../images/offerings/bg-offerings@1x_480.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/bg-offerings@2x_480.png);
-    }
-  }
-
-  // tablet screen 768px
-  @include mq(tab) {
-    background-image: url(../images/offerings/bg-offerings@1x_768.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/bg-offerings@2x_768.png);
-    }
-  }
-
-  // desktop screen 1280px
-  @include mq(desk) {
-    background-image: url(../images/offerings/bg-offerings@1x_1280.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/bg-offerings@2x_1280.png);
-    }
-  }
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
   &__inner {
     @include mq(desk) {
       @include centered-flex;
     }
+
+    background-color: var(--cl-white);
+
+    // mobile screen 320px
+    background-image: url(../images/offerings/bg-offerings@1x_320.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/bg-offerings@2x_320.png);
+    }
+
+    // mobile screen 480px
+    @include mq(mob-only) {
+      background-image: url(../images/offerings/bg-offerings@1x_480.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/offerings/bg-offerings@2x_480.png);
+      }
+    }
+
+    // tablet screen 768px
+    @include mq(tab) {
+      background-image: url(../images/offerings/bg-offerings@1x_768.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/offerings/bg-offerings@2x_768.png);
+      }
+    }
+
+    // desktop screen 1280px
+    @include mq(desk) {
+      background-image: url(../images/offerings/bg-offerings@1x_1280.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/offerings/bg-offerings@2x_1280.png);
+      }
+    }
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   &__img--position {
