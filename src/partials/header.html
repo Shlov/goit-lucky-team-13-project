@@ -2,17 +2,19 @@
     <div class="container header__container">
         <!-- Logo link svg -->
         <a class="header__logo-link" href="" target="_blank" rel="noopener noreferrer">
-            <svg class="header__logo-svg" width="66" height="52">
+
+            <svg class="header__logo-svg img" width="66" height="52">
                 <use href="./images/symbol-defs.svg#Group-60"></use>
             </svg>
         </a>
-        <!-- Header modal btn -->
-        <button type="button" class="header__modal-btn" data-menu-open>
-            <svg class="header__modal-btn-svg img" width="23" height="16">
-                <use href="./images/symbol-defs.svg#gg_menu"></use>
-            </svg>
-        </button>
-        <nav class="site-nav header__nav nav" data-menu>
+        <nav class="site-nav header__nav">
+
+            <!-- Header modal btn -->
+           <button type="button" class="header__modal-btn" data-menu-open="">
+                <svg class="header__modal-btn-svg img" width="23" height="16">
+                    <use href="./images/symbol-defs.svg#gg_menu"></use>
+                </svg>
+            </button>
             <ul class="nav__header lst">
                 <li class="nav__list-item nav__list-item__active"> <a class="nav__list-link lnk" href=""> Home</a></li>
                 <li class="nav__list-item "><a class="nav__list-link lnk" href=""> About</a></li>
@@ -20,13 +22,8 @@
                 <li class="nav__list-item "><a class="nav__list-link lnk" href=""> Menu</a></li>
                 <li class="nav__list-item "><a class="nav__list-link lnk" href=""> Contact</a></li>
             </ul>
-            <!-- Close menu btn -->
-            <button type="button" class="nav__cls-btn" data-menu-close>
-                <svg class="nav__cls-svg img" width="24" height="24">
-                    <use href="./images/symbol-hero.svg#cls-menu"></use>
-                </svg>
-            </button>
-            <!-- ^^^^^^^^^^^^^^ -->
+          
+
             <button type="button" class="header__order-btn button" >
             Order Now
             </button>

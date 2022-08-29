@@ -1,34 +1,45 @@
+
 .footer
-{   
-    @media screen and (max-width:480px)
-     {
-        
-        @media  (min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) 
-    {
-     }}
-    // background-image: url('/src/images/footer/');
-    display: block;
+{   position: relative;
+    z-index: 2;
+   
     &__container
-    {   min-width: 380px;
+    {    
+
+        @media screen and (max-width:480px)
+        {   
+            background-image:
+            url('/src/images/footer/nik/footer-480-1-1x.jpg'),
+            url('/src/images/footer/nik/footer-480-2-1x.jpg'),
+            url('/src/images/footer/nik/footer-480-3-1x.jpg')
+            ;
+            background-size:
+             110px 300px,
+             253px 66px,
+             110px 105px;
+            background-position:
+            100% 25px,
+            50% 100%,
+            0 130px;
+            background-repeat: no-repeat;
+           
+       }
+
+
+        min-width: 380px;
+
         padding: 60px 20px;
         @include mq(mob-only)
         {
             @include mq(mob);
             height: 619px;
-            // background-image: url('/src/images/footer/footer-480-1x.jpg');
-            background-size: cover;
         }
         border-top: 2px solid black;
     }    
     &__nav{
         display: flex;
         margin-bottom: 40px;
-        @media screen and (max-width:768px)
-         {
-            justify-content: space-between;
-        }
+
         @include mq(tab)
         {
             align-items: center;
@@ -82,7 +93,7 @@
         color: var(--cl-green-light);
     }
     &__policy{
-      
+
         display: flex; 
         margin-bottom: 60px;
         @include mq(desk)
