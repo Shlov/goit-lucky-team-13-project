@@ -162,6 +162,8 @@
     align-items: center;
   }
 
+  
+
   &__btn--order {
     @include fonts(13px, 500, 1.5);
     background-color: var(--cl-white);
@@ -173,6 +175,7 @@
       border: 2px solid var(--cl-green-btn-dark);
     }
   }
+
 
   &__btn--position {
     margin-right: 24px;
