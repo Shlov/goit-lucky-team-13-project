@@ -1,0 +1,73 @@
+<div class="backdrop backdrop--is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__btn-cls" data-modal-close>
+      <svg width="24" height="24">
+        <use href="./images/symbol-defs.svg#modal-cls-btn"></use>
+      </svg>
+    </button>
+
+    <!-- Modal form -->
+
+    <form class="form">
+      <strong class="form__title">Order Form</strong>
+      <div class="form__group" role="group">
+        <label class="form__label">
+          <span class="form__text">Name</span>
+          <input
+            class="form__input"
+            type="text"
+            name="user-name"
+            placeholder="Your name"
+            required
+            autofocus
+          />
+          <div class="form__invalid">
+            <svg class="form__icon-error" width="12" height="12">
+              <use href="./images/symbol-defs.svg#error"></use>
+            </svg>
+            <span class="form__text-error"
+              >The name must be between 3 and 25 characters</span
+            >
+          </div>
+        </label>
+        <label class="form__label">
+          <span class="form__text">Phone number</span>
+          <input
+            class="form__input"
+            type="tel"
+            name="user-phone"
+            placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            required
+          />
+          <div class="form__invalid">
+            <svg class="form__icon-error" width="12" height="12">
+              <use href="./images/symbol-defs.svg#error"></use>
+            </svg>
+            <span class="form__text-error">
+              This phone must be in the format 099 000 00 00</span
+            >
+          </div>
+        </label>
+        <label class="form__label">
+          <span class="form__text">E-mail</span>
+          <input
+            class="form__input"
+            type="email"
+            name="user-mail"
+            placeholder="example@gmail.com"
+            required
+          />
+          <div class="form__invalid">
+            <svg class="form__icon-error" width="12" height="12">
+              <use href="./images/symbol-defs.svg#error"></use>
+            </svg>
+            <span class="form__text-error">
+              Please enter a valid email address</span
+            >
+          </div>
+        </label>
+      </div>
+      <button class="form__btn button" type="submit">Send</button>
+    </form>
+  </div>
+</div>
