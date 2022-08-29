@@ -56,148 +56,145 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
 
-.offerings__inner {
-  @include mq(desk) {
-    @include centered-flex;
-  }
-}
-
-.offerings__img--position {
-  margin-bottom: 60px;
-  @include mq(desk) {
-    margin-bottom: 0;
-    margin-right: 90px;
-  }
-}
-
-.offerings__content {
-  max-width: 573px;
-}
-
-.offerings__title--position {
-  max-width: 526px;
-  margin-bottom: 28px;
-
-  @include mq(tab) {
-    margin-bottom: 20px;
-  }
-}
-
-.offerings__desc {
-  max-width: 500px;
-  @include mq(tab) {
-    @include fonts(16px, 400, 18.75px);
+  &__inner {
+    @include mq(desk) {
+      @include centered-flex;
+    }
   }
 
-  @include mq(desk) {
-    @include fonts(16px, 400, 24px);
-  }
-}
-
-.offerings__desc--position {
-  margin-bottom: 28px;
-  @include mq(desk) {
-    margin-bottom: 40px;
-  }
-}
-
-.offerings__lst {
-  @include card-set(28px);
-
-  @include mq(tab) {
-    gap: 116px;
-    flex-wrap: nowrap;
-  }
-}
-
-.offerings__lst--position {
-  margin-bottom: 28px;
-  @include mq(tab) {
-    margin-bottom: 40px;
-  }
-  @include mq(desk) {
-    margin-bottom: 32px;
-  }
-}
-
-.offerings__caption {
-  @include fonts(18px, 700, 21px);
-}
-
-.offerings__txt {
-  @include mq(desk) {
-    @include fonts(14px, 400, 21px);
-  }
-}
-
-.offerings__item {
-  position: relative;
-  @include card-set(8px);
-  padding-top: 56px;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-color: var(--cl-white);
+  &__img--position {
+    margin-bottom: 60px;
+    @include mq(desk) {
+      margin-bottom: 0;
+      margin-right: 90px;
+    }
   }
 
-  @for $i from 1 through 2 {
-    &:nth-child(2n + #{$i}) {
-      &::before {
-        background-image: url(../images/offerings/icon-#{$i}.svg);
+  &__content {
+    max-width: 573px;
+  }
+
+  &__title--position {
+    max-width: 526px;
+    margin-bottom: 28px;
+
+    @include mq(tab) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__desc {
+    max-width: 500px;
+    @include mq(tab) {
+      @include fonts(16px, 400, 18.75px);
+    }
+
+    @include mq(desk) {
+      @include fonts(16px, 400, 24px);
+    }
+
+    &--position {
+      margin-bottom: 28px;
+      @include mq(desk) {
+        margin-bottom: 40px;
       }
     }
   }
-}
 
-.offerings__thumb {
-  display: flex;
-  align-items: center;
-}
+  &__lst {
+    @include card-set(28px);
 
-.offerings__btn {
-  @include fonts(13px, 500, 1.5);
-  background-color: var(--cl-white);
-  color: var(--cl-almost-black);
-  border: 2px solid var(--cl-green-dark);
+    @include mq(tab) {
+      gap: 116px;
+      flex-wrap: nowrap;
+    }
 
-  &::hover,
-  &::focus {
-    border: 2px solid var(--cl-green-btn-dark);
+    &--position {
+      margin-bottom: 28px;
+      @include mq(tab) {
+        margin-bottom: 40px;
+      }
+      @include mq(desk) {
+        margin-bottom: 32px;
+      }
+    }
   }
-}
 
-.offerings__btn--position {
-  margin-right: 24px;
-}
-
-.offerings__wrap {
-  @include centered-flex;
-  gap: 3.42px;
-
-  @include mq(desk) {
-    display: none;
+  &__caption {
+    @include fonts(18px, 700, 21px);
   }
-}
 
-.offerings__lnk {
-  display: block;
-  @include fonts(13.67px, 400, 20.5px);
-  color: var(--cl-black);
-}
+  &__txt {
+    @include mq(desk) {
+      @include fonts(14px, 400, 21px);
+    }
+  }
 
-.offerings__icon {
-  display: block;
-}
+  &__item {
+    position: relative;
+    @include card-set(8px);
+    padding-top: 56px;
 
-.icon {
-  fill: var(--cl-yellow);
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: var(--cl-white);
+    }
+
+    @for $i from 1 through 2 {
+      &:nth-child(2n + #{$i}) {
+        &::before {
+          background-image: url(../images/offerings/icon-#{$i}.svg);
+        }
+      }
+    }
+  }
+
+  &__thumb {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn--order {
+    @include fonts(13px, 500, 1.5);
+    background-color: var(--cl-white);
+    color: var(--cl-almost-black);
+    border: 2px solid var(--cl-green-dark);
+
+    &::hover,
+    &::focus {
+      border: 2px solid var(--cl-green-btn-dark);
+    }
+  }
+
+  &__btn--position {
+    margin-right: 24px;
+  }
+
+  &__btn--read {
+    @include centered-flex;
+    gap: 3.42px;
+    background-color: var(--cl-yellow);
+    color: var(--cl-almost-black);
+
+    @include mq(desk) {
+      display: none;
+    }
+  }
+
+  &__lnk {
+    @include fonts(13.67px, 400, 20.5px);
+    color: var(--cl-black);
+  }
+
+  &__icon {
+    color: currentColor;
+  }
 }
