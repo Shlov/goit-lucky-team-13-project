@@ -6,13 +6,9 @@
 }
 .subscribe-form__input {
     @include fonts(12, 400, 1.5);
-    
     padding: 12px 12px;
     width: 100%;
     height: 42px;
-    @include mq(mob-only) {
-    margin-bottom: 20px;
-    }
     @include mq(tab) {
     width: 450px;
     margin-right: 22px;
@@ -45,15 +41,16 @@
 .subscribe-form__wrap{
     display: flex;
     flex-direction: column;
-    margin-bottom: 4px;
+    @include mq(mob-only) {
+    margin-bottom: 20px;
+        }
 }
 .subscribe-form__error{
-    color: #FF705D;
-    
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    margin-top: 3px;
     display: none;
+    align-items: center;
+    margin-top: 4px;
+    color: #FF705D;
+    font-size: 12px;
+    
     
 }
