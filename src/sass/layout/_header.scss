@@ -1,48 +1,47 @@
- 
-  .header{
+.header{
 
-    @include centered-flex;
-    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 
-    &__container{
-     
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-    }
-    &__nav{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 
-    }
+  &__container{
    
-    &__modal-btn{
-      border: none;
-      cursor: pointer;
-      background-color: rgba(0,0,0,0);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-      @include mq(tab)
-      {
-      display: none;
-      }
-     &:active .header__modal-btn-svg{
-      fill: var(--cl-yellow);
-    }
-    }
-  
-    &__modal-btn-svg{
-      fill: var(--cl-green-dark);
-      transition: fill var(--animat);
-    }
-      &__order-btn{
-      @media screen and (max-width:768px) {
-        display: none; 
-       }
-       @include fonts(14px, 400, 21px);
+  }
+ 
+  &__modal-btn{
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
 
-          &:hover{
-            background-color: var(--cl-green-btn-light);
-          }}
+    @include mq(tab)
+    {
+    display: none;
+    }
+   &:active .header__modal-btn-svg{
+    fill: var(--cl-yellow);
+  }
+  }
+
+  &__modal-btn-svg{
+    fill: var(--cl-green-dark);
+    transition: fill var(--animat);
+  }
+    &__order-btn{
+    @media screen and (max-width:768px) {
+      display: none; 
+     }
+     @include fonts(14px, 400, 21px);
+
+        &:hover{
+          background-color: var(--cl-green-btn-light);
+        }}
 
 }

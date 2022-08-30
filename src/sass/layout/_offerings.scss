@@ -163,6 +163,7 @@
   &__thumb {
     display: flex;
     align-items: center;
+    gap: 24px;
   }
 
   &__btn--order {
@@ -170,25 +171,26 @@
     color: var(--cl-almost-black);
     border: 2px solid var(--cl-green-dark);
 
+    transition: border-color var(--animat);
+
     &:hover,
     &:focus {
       background-color: var(--cl-white);
-      border: 2px solid var(--cl-green-btn-dark);
+      border-color: var(--cl-green-btn-dark);
     }
   }
 
-  &__btn--position {
-    margin-right: 24px;
-  }
-
-  &__btn--read {
+    &__lnk {
     @include centered-flex;
-    gap: 3.42px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 
     @include fonts(13.67px, 400, 20.5px);
 
-    background-color: var(--cl-yellow);
-    color: var(--cl-almost-black);
+    color: var(--cl-black);
+
+    transition: color var(--animat), line-height var(--animat),
+      text-decoration var(--animat);
 
     @include mq(desk) {
       display: none;
@@ -196,16 +198,13 @@
 
     &:hover,
     &:focus {
-      background-color: var(--cl-yellow);
-      border: 2px solid var(--cl-green-btn-dark);
+      line-height: 22px;
+      color: var(--cl-green-btn-dark);
+      text-decoration: underline;
     }
   }
 
-  &__lnk {
-    color: var(--cl-black);
-  }
-
   &__icon {
-    color: currentColor;
+    fill: currentColor;
   }
 }
