@@ -1,2 +1,0 @@
-!function(){new Swiper(".swiper",{direction:"horizontal",loop:!1,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},scrollbar:{el:".swiper-scrollbar"}});!function(){var e=document.querySelector("[data-menu-open]"),n=document.querySelector("[data-menu-close]"),t=document.querySelector("[data-menu]");function o(){t.classList.toggle("is-open")}e.addEventListener("click",o),n.addEventListener("click",o)}()}();
-//# sourceMappingURL=index.65e18b64.js.map
