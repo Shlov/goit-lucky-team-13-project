@@ -42,7 +42,9 @@
          min-width: 320px;
         padding: 60px 20px;
 
+
       }    
+
 
     @media screen and (min-width:1280px)
        {
@@ -159,7 +161,6 @@
         }
     }
 
-    
 }
 .class{
     @include mq(desk)
@@ -177,4 +178,16 @@
     {
         display: flex;
     }
+}
+.up
+{
+position: sticky;
+left : 95%;
+bottom: 5%;
+&:hover &__svg{
+    fill: var(--cl-green-light);
+}
+&__svg{
+    fill: var(--cl-green-dark);
+}
 }

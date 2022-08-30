@@ -1,4 +1,6 @@
+
 .header__container {
+
     position: relative;
 }
 .nav {
@@ -37,7 +39,18 @@
         z-index: 1000;
     }
 }
-.nav__list-item:not(:last-child) {
+.f
+{
+    @include mq(mob-only) {
+        padding: 16px;
+        display: block;
+        @include fonts(16px, 400, 19px);
+        margin: 0;
+        width: 130px;
+        z-index: 1000;
+    }
+}
+.header>.nav__list-item:not(:last-child) {
     @include mq(mob-only) {
         margin: 0;
     }
