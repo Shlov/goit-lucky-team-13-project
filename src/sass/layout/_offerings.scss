@@ -163,6 +163,7 @@
   &__thumb {
     display: flex;
     align-items: center;
+    gap: 24px;
   }
 
   &__btn--order {
@@ -179,11 +180,7 @@
     }
   }
 
-  &__btn--position {
-    margin-right: 24px;
-  }
-
-  &__lnk {
+    &__lnk {
     @include centered-flex;
     padding-top: 7px;
     padding-bottom: 7px;
