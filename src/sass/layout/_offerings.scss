@@ -1,6 +1,5 @@
 .offerings {
-  background-color: var(--cl-white);
-
+  
   // mobile screen 320px
   background-image: url(../images/offerings/bg-offerings@1x_320.png);
 
@@ -43,6 +42,7 @@
     }
   }
 
+  background-color: var(--cl-white);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -166,12 +166,20 @@
     gap: 24px;
   }
 
-  &__btn--order {
+  &__btn {
+    min-width: 106px;
+    height: 40px;
+    padding: 0;
+
+    @include fonts(13px, 500, 19.5px);
+
     background-color: var(--cl-white);
     color: var(--cl-almost-black);
     border: 2px solid var(--cl-green-dark);
+    border-radius: 30px;
 
     transition: border-color var(--animat);
+    cursor: pointer;
 
     &:hover,
     &:focus {
@@ -189,8 +197,7 @@
 
     color: var(--cl-black);
 
-    transition: color var(--animat), line-height var(--animat),
-      text-decoration var(--animat);
+    transition: color var(--animat), text-decoration var(--animat);
 
     @include mq(desk) {
       display: none;
@@ -198,7 +205,6 @@
 
     &:hover,
     &:focus {
-      line-height: 22px;
       color: var(--cl-green-btn-dark);
       text-decoration: underline;
     }
@@ -206,5 +212,7 @@
 
   &__icon {
     fill: currentColor;
+
+    transition: fill var(--animat);
   }
 }
