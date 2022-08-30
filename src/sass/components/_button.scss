@@ -16,3 +16,25 @@
 .button:focus {
     background-color: var(--cl-green-btn-light);
 }
+
+.subscribe__button{
+    display: inline;
+    @include mq(mob){
+        margin-left: 12px;
+    }
+    border: 0.854167px solid var(--cl-green-dark);
+    border-radius: 30px;
+    width: 100px;
+    height: 45px;
+   
+    transition: background-color var(--animat);
+}
+.footer  .subscribe__button
+{
+    background: #FFFFFF;
+    &:hover ,
+    &:focus{
+        background-color:var(--cl-yellow);
+    }
+
+}
