@@ -68,11 +68,14 @@
   }
 
   &__title--position {
-    max-width: 526px;
     margin-bottom: 28px;
 
     @include mq(tab) {
       margin-bottom: 20px;
+    }
+
+    @include mq(tab-only) {
+      max-width: 526px;
     }
   }
 
@@ -103,7 +106,7 @@
     }
 
     @include mq(desk) {
-      gap: 63px;
+      gap: 67px;
     }
 
     &--position {
@@ -118,7 +121,11 @@
   }
 
   &__caption {
-    @include fonts(18px, 700, 21px);
+    @include fonts(18px, 700, 21.09px);
+
+    @include mq(desk) {
+      @include fonts(18px, 700, 25.2px);
+    }
   }
 
   &__txt {
