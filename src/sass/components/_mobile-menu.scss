@@ -30,6 +30,7 @@
 }
 
 .nav__list-link {
+    padding: 25px 0;
     @include mq(mob-only) {
         padding: 16px;
         display: block;
@@ -50,6 +51,7 @@
         z-index: 1000;
     }
 }
+
 .header>.nav__list-item:not(:last-child) {
     @include mq(mob-only) {
         margin: 0;
