@@ -61,3 +61,10 @@
     }
 }
 
+.subscribe__button--green{
+    border: none;
+    background-color: var(--cl-green-light);
+    &:hover, &:focus{
+        background-color: var(--cl-green-btn-light);
+    }
+}

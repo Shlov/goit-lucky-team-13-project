@@ -18,25 +18,29 @@
 }
 
 
-.subscribe-button{
-    @include fonts(15px, 500, 1.5);
+
+
+
+.subscribe__button{
+    @include fonts(13, 500, 1.5);
     @include centered-flex;
-    min-width: 103px;
-    height: 42px;
-    border: none;
     border-radius: 30px;
+    width: 103px;
+    height: 42px;
+    color: var(--cl-almost-black);
+    cursor: pointer;
     transition: background-color var(--animat);
 }
-.footer  .subscribe__button
-{
+
+.footer  .subscribe__button{  
     border: 0.854167px solid var(--cl-green-dark);
-     @include mq(mob){
-        margin-left: 12px;
+    @include mq(mob){
+    margin-left: 12px;
     }
     background: #FFFFFF;
     &:hover ,
     &:focus{
-        background-color:var(--cl-yellow);
+    background-color:var(--cl-yellow);
     }
 
 }
