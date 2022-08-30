@@ -55,5 +55,9 @@
     display: flex; 
     flex-direction: column;
 }
-
+.subscribe-btn--green{
+    @include mq(mob-only){
+    margin-left: auto;    
+    }
+}
 

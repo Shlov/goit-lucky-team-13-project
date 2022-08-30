@@ -17,12 +17,9 @@
     background-color: var(--cl-green-btn-light);
 }
 
-.subscribe__btn--green{
+.subscribe-btn{
     @include fonts(15px, 500, 1.5);
     @include centered-flex;
-    @include mq(mob-only){
-    margin-left: auto;    
-    }
     min-width: 103px;
     height: 42px;
     border: none;

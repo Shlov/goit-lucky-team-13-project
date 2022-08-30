@@ -6,14 +6,14 @@
 }
 .subscribe-form__input {
     @include fonts(12, 400, 1.5);
-    @include mq(mob-only) {
-    margin-bottom: 20px;
-    }
+    
     padding: 12px 12px;
     width: 100%;
     height: 42px;
-
-    @include mq(tab-only) {
+    @include mq(mob-only) {
+    margin-bottom: 20px;
+    }
+    @include mq(tab) {
     width: 450px;
     margin-right: 22px;
     }
@@ -52,7 +52,8 @@
     color: #FF705D;
     
     font-size: 12px;
-    display: block;
+    display: flex;
+    align-items: center;
     margin-top: 3px;
     display: none;
     
