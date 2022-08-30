@@ -1,6 +1,5 @@
-<section class="customers">
-  <div class="container">
-    <h2 class="customers__title">What our Customers Say</h2>
+<section class="customers container">
+  <h2 class="customers__title">What our Customers Say</h2>
     <p class="customers__lable">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </p>
@@ -14,7 +13,17 @@
         choose from too, I would recommend to a freind, No questions asked”
       </p>
       <div class="customer__container">
-        <img src="./images/customers/user-1-1x.png" width="48" height="48" alt="Фото клиента" />
+         <picture>
+                <source  srcset="
+                ./images/customers/user-1-1x.webp 1x, 
+                ./images/customers/user-1-2x.webp 2x
+                " type="image/webp">
+                <source  srcset="
+                ./images/customers/user-1-1x.png 1x, 
+                ./images/customers/user-1-2x.png 2x
+                " type="image/png">
+                <img class="img" src="./images/customers/user-1-1x.png" width="48" height="48" alt="Client foto">
+            </picture>
         <div class="customer__wrapper">
           <span class="customer__subtitle">Sumith Shah</span>
           <span class="customer__desc">Some Dude</span>
@@ -29,7 +38,18 @@
         “The ease with which I can just go in and order what i want was amazing, It has been a very pleasant experience ordering from this app”
       </p>
       <div class="customer__container">
-        <img src="./images/customers/user-2-1x.png" width="48" height="48" alt="Фото клиента" />
+        <picture>
+                <source  srcset="
+                ./images/customers/user-2-1x.webp 1x, 
+                ./images/customers/user-2-2x.webp 2x
+                " type="image/webp">
+                <source  srcset="
+                ./images/customers/user-2-1x.png 1x, 
+                ./images/customers/user-2-2x.png 2x
+                " type="image/png"
+                >
+                <img class="img" src="./images/customers/user-1-1x.png" width="48" height="48" alt="Client foto">
+            </picture>
         <div class="customer__wrapper">
           <span class="customer__subtitle">Sumith Shah</span>
           <span class="customer__desc">Some Dude</span>
@@ -38,5 +58,4 @@
       </li>
       </ul>
     </div>
-  </div>
-</section>
+  </section>
