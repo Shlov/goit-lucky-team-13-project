@@ -8,7 +8,7 @@ body {
     @include mq(desk) {
         @include fonts(16px, 400, 1.5);
     }
-    .current{
+    .nav__list-item--active{
         color:var(--cl-green-light);
       }
 }

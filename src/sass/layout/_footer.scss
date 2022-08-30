@@ -1,26 +1,64 @@
+
 .footer
-{
-    display: block;
-    &__container
-    {  padding: 60px 20px;
-        @include mq(mob-only)
-        {
-            @include mq(mob);
-            height: 619px;
-            // background-image: url('/src/images/footer/footer-480-1x.jpg');
-            background-size: cover;
-        }
-        border-top: 2px solid black;
-    }    
+
+{   
+ &__container
+    {    @media screen and (max-width:768px)
+        {   
+            background-image:
+            url('/src/images/footer/nik/footer-480-1-1x.jpg'),
+            url('/src/images/footer/nik/footer-480-2-1x.jpg'),
+            url('/src/images/footer/nik/footer-480-3-1x.jpg')
+            ;
+            background-size:
+             110px 300px,
+             253px 66px,
+             110px 105px;
+            background-position:
+            100% 25px,
+            50% 100%,
+            0 130px;
+
+            background-repeat: no-repeat; 
+       }
+       @media screen and (max-width:1280px)
+       {   
+           background-image:
+           url('/src/images/footer/nik/footer-480-1-1x.jpg'),
+        
+           url('/src/images/footer/nik/footer-768-1-1x.jpg');
+
+       
+           background-size:
+           180px 365px,
+           100% ;
+            
+           background-position:
+           100% 25px,
+           0 100%;
+      
+           background-repeat: no-repeat; 
+      }
+         min-width: 320px;
+        padding: 60px 20px;
+
+
+      }    
+
+
+    @media screen and (min-width:1280px)
+       {
+        background-image: url('/src/images/footer/nik/footer-1280-1-1x.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0 100%;
+       }
+
     &__nav{
         display: flex;
         margin-bottom: 40px;
-        @media screen and (max-width:480px)
-         {
-            justify-content: space-between;
-        }
-       
-        @include mq(mob){
+        @include mq(tab)
+        {
             align-items: center;
         }
         }
@@ -40,11 +78,7 @@
     {
         flex-direction: column;
     }
-   
-      
-    }   
-    
-        
+    }        
     &__list-item:not(:last-child)
     {   
         @include mq(mob){
@@ -56,11 +90,9 @@
         }           
     }
     &__list-pivacy{
-        @include centered-flex();
-        margin-bottom: 40px;
-    }
-    &__list-pivacy-item:not(:last-child){
-    margin-right: 32px;
+        display: flex;
+        margin-bottom: 40px;    
+        gap: 32px;
     }
     &__privacy-link{
         cursor: pointer;
@@ -71,16 +103,20 @@
         color: var(--cl-green-light);
     }
     &__policy{
-        @include mq(tab)
+     display: flex; 
+        margin-bottom: 60px;
+        @include mq(mob)
         {
             display: flex;
             margin-left: auto;
-            justify-content: flex-end;
+            margin-bottom: 100px;
         }
-        
-        display: block;
-        margin-bottom: 60px;
-    }
+        @include mq(desk)
+        {
+            display: flex;
+            margin-left: auto; 
+        }
+      }
     &__reserved{
         @include mq(tab){
             margin-left: auto;
@@ -124,34 +160,18 @@
             width: 280px;
         }
     }
-    &__btn{
-        display: inline;
-        @media screen and(max-width:480px) 
-        {
-            
-        }
-        @include mq(mob){
-            margin-left: 12px;
-        }
-        background: #FFFFFF;
-        border: 0.854167px solid var(--cl-green-dark);
-        border-radius: 30px;
-        width: 100px;
-        height: 40px;
-        &:hover{
-            background-color:var(--cl-yellow);
-          
-        }
-        transition: background-color var(--animat);
-    }
-    
+
 }
 .class{
-    @include mq(tab)
+    @include mq(desk)
     {
         display: flex;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
+}
+.class2{
+    margin-left: auto;
 }
 .policy{
     @include mq(tab)

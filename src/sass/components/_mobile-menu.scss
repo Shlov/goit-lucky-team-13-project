@@ -1,1 +1,84 @@
-// не впевнений що буде необхіден цей файл. В залежності як робити меню: окремим блоком чи пере стилізувати.
+
+.header__container {
+
+    position: relative;
+}
+.nav {
+    @include mq(mob-only) {
+        display: block;
+        position: absolute;
+        z-index: 100;
+        right: 20px;
+        top: 50px;
+        width: 130px;
+        height: 255px;
+        margin: 0;
+        border-radius: 30px 0px 30px 30px;
+        box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+        background: var(--cl-almost-white);
+        opacity: 1;
+        visibility: hidden;
+        pointer-events: none;
+    }    
+}
+
+.nav__header {
+    @include mq(mob-only) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.nav__list-link {
+    padding: 25px 0;
+
+    @include mq(mob-only) {
+        padding: 16px;
+        display: block;
+        @include fonts(16px, 400, 19px);
+        margin: 0;
+        width: 130px;
+        z-index: 1000;
+    }
+    &:hover{  
+        color: var(--cl-green-light);
+               }
+}
+
+
+.f
+{
+    @include mq(mob-only) {
+        padding: 16px;
+        display: block;
+        @include fonts(16px, 400, 19px);
+        margin: 0;
+        width: 130px;
+        z-index: 1000;
+    }
+}
+
+
+.header>.nav__list-item:not(:last-child) {
+    @include mq(mob-only) {
+        margin: 0;
+    }
+}
+
+.nav__cls-btn {
+    position: absolute;
+    z-index: 200;
+    top: 4px;
+    right: 4px;
+    padding: 0;
+    border: none;
+    @include mq(tab) {
+        display: none;
+    }    
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+}

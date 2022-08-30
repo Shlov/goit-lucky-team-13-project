@@ -1,0 +1,44 @@
+.nav{
+  &__header
+  {  
+    display: flex;
+    @include mq(tab) {
+      margin-right: 30px;
+    }
+ }
+  &__footer
+  {  
+    @media screen and (max-width:480px)
+    {
+      flex-direction: column;
+    }
+
+     @include mq(mob)
+
+      {
+          display: flex;
+      }
+      margin-left: auto;
+
+  }
+  &__list-item:not(:last-child){
+  margin-right: 28px;
+  display: flex;
+  align-items: center;
+  }
+
+  &__list-item{
+    display: flex;
+    align-items: center;
+    }
+
+  &__list-link-footer{
+  padding: 28px 0;
+  display: inline-block;
+  @include fonts(14px, 400, 16px);
+  transition: color var(--animat);
+  &:hover{  
+  color: var(--cl-green-light);
+         }
+      }
+  }
