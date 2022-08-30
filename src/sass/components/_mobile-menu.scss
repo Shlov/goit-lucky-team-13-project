@@ -28,7 +28,7 @@
     }
 }
 
-.nav__list-link {
+.header > .nav__list-link {
     @include mq(mob-only) {
         padding: 16px;
         display: block;
@@ -38,7 +38,7 @@
         z-index: 1000;
     }
 }
-.nav__list-item:not(:last-child) {
+.header > .nav__list-item:not(:last-child) {
     @include mq(mob-only) {
         margin: 0;
     }

@@ -2,15 +2,11 @@
   @include centered-flex;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 
-  &__container {
-    align-items: center;
+
     display: flex;
-    justify-content: space-between;
-  }
-  &__nav {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+
 
     &--current {
       color: var(--cl-green-light);
