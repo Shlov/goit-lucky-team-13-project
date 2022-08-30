@@ -17,10 +17,6 @@
     background-color: var(--cl-green-btn-light);
 }
 
-
-
-
-
 .subscribe__button{
     @include fonts(13, 500, 1.5);
     @include centered-flex;
