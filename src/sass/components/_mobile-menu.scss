@@ -51,6 +51,7 @@
         z-index: 1000;
     }
 }
+
 .header>.nav__list-item:not(:last-child) {
     @include mq(mob-only) {
         margin: 0;
