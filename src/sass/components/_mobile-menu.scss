@@ -1,5 +1,4 @@
-// не впевнений що буде необхіден цей файл. В залежності як робити меню: окремим блоком чи пере стилізувати.
-.header__container {
+header__container {
     position: relative;
 }
 .nav {
@@ -28,7 +27,7 @@
     }
 }
 
-.header > .nav__list-link {
+.nav__list-link {
     @include mq(mob-only) {
         padding: 16px;
         display: block;
@@ -38,7 +37,7 @@
         z-index: 1000;
     }
 }
-.header > .nav__list-item:not(:last-child) {
+.nav__list-item:not(:last-child) {
     @include mq(mob-only) {
         margin: 0;
     }
@@ -61,4 +60,3 @@
     visibility: visible;
     pointer-events: visible;
 }
-

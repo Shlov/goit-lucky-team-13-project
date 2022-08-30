@@ -176,3 +176,15 @@
         display: flex;
     }
 }
+.up
+{
+position: sticky;
+left : 95%;
+bottom: 5%;
+&:hover &__svg{
+    fill: var(--cl-green-light);
+}
+&__svg{
+    fill: var(--cl-green-dark);
+}
+}

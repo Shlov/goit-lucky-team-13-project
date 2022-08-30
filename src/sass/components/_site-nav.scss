@@ -13,7 +13,7 @@
     {
       flex-direction: column;
     }
-     @include mq(mob)
+     @include mq(tab)
       {
           display: flex;
       }
