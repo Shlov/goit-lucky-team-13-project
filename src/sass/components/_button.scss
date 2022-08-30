@@ -17,24 +17,30 @@
     background-color: var(--cl-green-btn-light);
 }
 
+
+
+
+
 .subscribe__button{
-    display: inline;
-    @include mq(mob){
-        margin-left: 12px;
-    }
-    border: 0.854167px solid var(--cl-green-dark);
+    @include fonts(13, 500, 1.5);
+    @include centered-flex;
     border-radius: 30px;
-    width: 100px;
-    height: 45px;
-   
+    width: 103px;
+    height: 42px;
+    color: var(--cl-almost-black);
+    cursor: pointer;
     transition: background-color var(--animat);
 }
-.footer  .subscribe__button
-{
+
+.footer  .subscribe__button{  
+    border: 0.854167px solid var(--cl-green-dark);
+    @include mq(mob){
+    margin-left: 12px;
+    }
     background: #FFFFFF;
     &:hover ,
     &:focus{
-        background-color:var(--cl-yellow);
+    background-color:var(--cl-yellow);
     }
 
 }
