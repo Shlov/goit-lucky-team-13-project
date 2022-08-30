@@ -158,23 +158,7 @@
             width: 280px;
         }
     }
-    &__btn{
-        display: inline;
-      
-        @include mq(mob){
-            margin-left: 12px;
-        }
-        background: #FFFFFF;
-        border: 0.854167px solid var(--cl-green-dark);
-        border-radius: 30px;
-        width: 100px;
-        height: 40px;
-        &:hover{
-            background-color:var(--cl-yellow);
-          
-        }
-        transition: background-color var(--animat);
-    }
+
     
 }
 .class{
