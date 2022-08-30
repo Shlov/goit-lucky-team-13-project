@@ -55,13 +55,12 @@
     display: flex; 
     flex-direction: column;
 }
-.subscribe-btn--green{
+
+
+.subscribe__button--green{
     @include mq(mob-only){
     margin-left: auto;    
     }
-}
-
-.subscribe__button--green{
     border: none;
     background-color: var(--cl-green-light);
     &:hover, &:focus{
