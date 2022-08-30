@@ -30,6 +30,7 @@
 }
 
 .nav__list-link {
+    padding: 25px 0;
     @include mq(mob-only) {
         padding: 16px;
         display: block;
