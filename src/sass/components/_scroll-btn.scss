@@ -1,10 +1,12 @@
 .up
+
 { 
 position: sticky;
 left : 47%;
 bottom: 6%;
 
 transform: translateX(-50%);
+
 
 &:hover &__svg{
     background-color: #b7ff0043;

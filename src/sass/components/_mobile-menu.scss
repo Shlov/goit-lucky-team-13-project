@@ -31,6 +31,7 @@
 
 .nav__list-link {
     padding: 25px 0;
+
     @include mq(mob-only) {
         padding: 16px;
         display: block;
@@ -43,6 +44,8 @@
         color: var(--cl-green-light);
                }
 }
+
+
 .f
 {
     @include mq(mob-only) {
@@ -54,6 +57,7 @@
         z-index: 1000;
     }
 }
+
 
 .header>.nav__list-item:not(:last-child) {
     @include mq(mob-only) {
