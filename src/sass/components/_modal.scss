@@ -122,16 +122,24 @@
   cursor: pointer;
   transition: border-color var(--animat);
 
-  &:invalid {
-    border-color: var(--cl-accent);
-  }
+  // &:invalid {
+  //   border-color: var(--cl-accent);
+  // }
 
   &:invalid ~ .form__invalid {
     opacity: 1;
   }
 
+  &:valid ~ .form__invalid {
+    opacity: 0;
+  }
+
   &:not(:placeholder-shown):required:valid {
     border-color: var(--cl-green-dark);
+  }
+
+  &:not(:placeholder-shown):required:invalid {
+    border-color: var(--cl-accent);
   }
 }
 
@@ -145,7 +153,6 @@
 
   .form__text-error {
     color: var(--cl-accent);
-    // margin-left: 4px;
     @include fonts(13px, 500, 1.4);
     @include mq(mob-only) {
       @include fonts(11px, 500, 1.4);
