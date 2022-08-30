@@ -80,6 +80,7 @@
     }
     &__icon {
         display: none;
+        fill: currentColor;
         &--desk {
             @include mq(desk) {
                 display: block;
@@ -93,7 +94,6 @@
     }
 }
 
-
 // Classes slider
 .swiper-button-next,
 .swiper-button-prev {
@@ -102,14 +102,30 @@
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    transition: opacity var(--animat), color var(--animat);
+    color: var(--cl-almost-black) ;
     @include mq(tab-only) {
         width: 38px;
         height: 34px;
         border-radius: 4px;
     }
+    &:hover,
+    &:focus {
+        color: var(--cl-green-btn-dark) ;
+    }
 }
-.swiper-button-disabled {
-    opacity: .6;
+.swiper-button-next {
+    @include mq(tab-only) {
+        padding-left: 3px;
+    }
+}
+.swiper-button-prev {
+    @include mq(tab-only) {
+        padding-right: 3px;
+    }
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: .75;
 }
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
     left: 0px;
