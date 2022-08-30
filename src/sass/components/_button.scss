@@ -17,17 +17,28 @@
     background-color: var(--cl-green-btn-light);
 }
 
+
 .subscribe-btn{
     @include fonts(15px, 500, 1.5);
     @include centered-flex;
     min-width: 103px;
     height: 42px;
     border: none;
+
     border-radius: 30px;
-    background-color: var(--cl-green-light);
-    cursor: pointer;
+    width: 100px;
+    height: 45px;
     transition: background-color var(--animat);
-    &:hover, &:focus{
-    background-color: var(--cl-green-btn-light);   
+}
+.footer  .subscribe__button
+{
+ @include mq(mob){
+        margin-left: 12px;
     }
+    background: #FFFFFF;
+    &:hover ,
+    &:focus{
+        background-color:var(--cl-yellow);
+    }
+
 }
