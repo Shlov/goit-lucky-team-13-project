@@ -72,30 +72,33 @@
   }
 }
 
-.no-scroll {
-  overflow: hidden;
-}
-
 .form {
-  padding: 32px;
+  padding: 32px 20px;
   height: 100%;
-}
 
-.form__title {
-  display: block;
-  @include fonts(24px, 700, 1.2);
-  text-align: center;
-  margin-bottom: 20px;
+  .form__title {
+    display: block;
+    @include fonts(24px, 700, 1.2);
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 
 .form__group {
-  margin-bottom: 32px;
+  margin-bottom: 14px;
+
+  @include mq(mob-only) {
+    margin-bottom: 17px;
+  }
 }
 
 .form__label {
-  // position: relative;
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 6px;
+
+  @include mq(mob-only) {
+    margin-bottom: 9px;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -112,33 +115,42 @@
 .form__input {
   width: 100%;
   padding: 14px 12px;
-  border: 1px solid var(--cl-green-dark);
-  border-radius: 30px;
+  border: 1px solid rgba(18, 18, 18, 0.12);
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
   outline: transparent;
+  border-radius: 30px;
   cursor: pointer;
+  transition: border-color var(--animat);
 
   &:invalid {
     border-color: var(--cl-accent);
   }
-}
 
-.form__invalid {
-  display: flex;
-  align-items: center;
-}
+  &:invalid ~ .form__invalid {
+    opacity: 1;
+  }
 
-.form__text-error {
-  color: var(--cl-accent);
-
-  @include fonts(13px, 500, 1.4);
-  @include mq(mob-only) {
-    @include fonts(11px, 500, 1.4);
+  &:not(:placeholder-shown):required:valid {
+    border-color: var(--cl-green-dark);
   }
 }
 
-.form__error {
-  max-width: 258px;
+.form__invalid {
+  opacity: 0;
+  transition: opacity var(--animat);
+
+  .form__icon-error {
+    margin-left: 12px;
+  }
+
+  .form__text-error {
+    color: var(--cl-accent);
+    // margin-left: 4px;
+    @include fonts(13px, 500, 1.4);
+    @include mq(mob-only) {
+      @include fonts(11px, 500, 1.4);
+    }
+  }
 }
 
 .form__btn {
@@ -149,6 +161,7 @@
   border-radius: 30px;
   background-color: var(--cl-white);
   border: 2px solid var(--cl-green-dark);
+  transition: background-color var(--animat);
 
   &:hover,
   &:focus {
