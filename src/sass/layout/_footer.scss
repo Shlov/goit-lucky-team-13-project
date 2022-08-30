@@ -4,8 +4,6 @@
 {   
  &__container
     {    @media screen and (max-width:768px)
-
-
         {   
             background-image:
             url('/src/images/footer/nik/footer-480-1-1x.jpg'),
@@ -41,11 +39,11 @@
       
            background-repeat: no-repeat; 
       }
-         min-width: 380px;
+         min-width: 320px;
         padding: 60px 20px;
 
+      }    
 
-    }    
     @media screen and (min-width:1280px)
        {
         background-image: url('/src/images/footer/nik/footer-1280-1-1x.jpg');
@@ -57,12 +55,10 @@
     &__nav{
         display: flex;
         margin-bottom: 40px;
-
         @include mq(tab)
         {
             align-items: center;
         }
-       
         }
    &__logo{
         margin-right: 60px;
@@ -93,10 +89,8 @@
     }
     &__list-pivacy{
         display: flex;
-        margin-bottom: 40px;
-    }
-    &__list-pivacy-item:not(:last-child){
-    margin-right: 32px;
+        margin-bottom: 40px;    
+        gap: 32px;
     }
     &__privacy-link{
         cursor: pointer;
@@ -115,16 +109,12 @@
             margin-left: auto;
             margin-bottom: 100px;
         }
-
         @include mq(desk)
         {
             display: flex;
-            margin-left: auto;
-          
+            margin-left: auto; 
         }
-
-        
-    }
+      }
     &__reserved{
         @include mq(tab){
             margin-left: auto;
@@ -170,10 +160,7 @@
     }
     &__btn{
         display: inline;
-        @media screen and(max-width:480px) 
-        {
-            
-        }
+      
         @include mq(mob){
             margin-left: 12px;
         }

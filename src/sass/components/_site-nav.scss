@@ -6,25 +6,21 @@
     @include mq(tab) {
       margin-right: 30px;
     }
-    @media screen and (max-width:768px) 
-    {
-  //    display: none; 
-    }
-    
-  }
+
+ }
   &__footer
-  {  @media screen and (max-width:768px)
+  {  
+    @media screen and (max-width:480px)
     {
       flex-direction: column;
     }
-
-
-      @include mq(mob)
-
+     @include mq(mob)
       {
           display: flex;
       }
-      margin-left: 114px;
+      margin-left: auto;
+
+
 
   }
   &__list-item:not(:last-child){
