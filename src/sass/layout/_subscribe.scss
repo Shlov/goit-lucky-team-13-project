@@ -36,10 +36,8 @@
     }
 }
 .subscribe__title{
-    
     @include fonts(28, 700, 1.2);
     margin-bottom: 20px;        
-    
     @include mq(tab) {
     @include fonts(42, 700, 1.2);
     margin-bottom: 20px;
@@ -55,8 +53,6 @@
     display: flex; 
     flex-direction: column;
 }
-
-
 .subscribe__button--green{
     @include mq(mob-only){
     margin-left: auto;    
@@ -64,6 +60,6 @@
     border: none;
     background-color: var(--cl-green-light);
     &:hover, &:focus{
-        background-color: var(--cl-green-btn-light);
+    background-color: var(--cl-green-btn-light);
     }
 }

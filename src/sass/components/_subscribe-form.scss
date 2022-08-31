@@ -44,7 +44,7 @@
     flex-direction: column;
     @include mq(mob-only) {
     margin-bottom: 20px;
-        }
+    }
 }
 .subscribe-form__error{
     position: absolute;
@@ -53,7 +53,8 @@
     align-items: center;
     margin-top: 4px;
     color: #FF705D;
-    font-size: 12px;
-    
-    
+    font-size: 12px;   
+}
+.subscribe-form__icon{
+    margin-right: 4px;
 }
