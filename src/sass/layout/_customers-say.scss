@@ -44,12 +44,9 @@
     }
     }
    
-    
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    ;
 }
 .customers__title{
     @include fonts(28, 700, 1.179);
@@ -83,9 +80,7 @@
 }
 .customers__item{
     padding: 8px;
-    // width: 100%;
-    // height: 100%;
-    
+ 
     @include mq(tab){
     padding: 12px;
     width: 336px;
