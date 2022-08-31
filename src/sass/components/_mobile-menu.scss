@@ -42,7 +42,7 @@
     }
     &:hover{  
         color: var(--cl-green-light);
-               }
+    }
 }
 
 
@@ -67,7 +67,7 @@
 
 .nav__cls-btn {
     position: absolute;
-    z-index: 200;
+    z-index: 1001;
     top: 4px;
     right: 4px;
     padding: 0;
