@@ -5,6 +5,7 @@
     }
 }
 .subscribe-form__input {
+    position: relative;
     @include fonts(12, 400, 1.5);
     padding: 12px 12px;
     width: 100%;
@@ -34,8 +35,8 @@
     border-color: #FF705D;
     }
     &:invalid:not(:placeholder-shown) + .subscribe-form__error {
-    display: flex;
-    
+    opacity: 1;
+    transform: translateY(45px);
     }
 }
 .subscribe-form__wrap{
@@ -46,7 +47,9 @@
         }
 }
 .subscribe-form__error{
-    display: none;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
     align-items: center;
     margin-top: 4px;
     color: #FF705D;
