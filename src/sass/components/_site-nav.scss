@@ -5,17 +5,33 @@
     @include mq(tab) {
       margin-right: 30px;
     }
-  }
+ }
   &__footer
-  {  
-    @media screen and (max-width:480px)
-    {
+  { 
+     
+    
+
+     @include mq(mob)
+
+      {
+          display: flex;
+          flex-direction: column;
+          
+      }
+      @media screen and (max-width:768px)
+    { margin-right: 104px;
       flex-direction: column;
-    }
-    @include mq(mob) {
       display: flex;
     }
-    margin-left: auto;
+      margin-left: auto;
+      @include mq(tab)
+
+      {
+          display: flex;
+          flex-direction:row;
+          
+      }
+
   }
   &__list-item:not(:last-child){
   margin-right: 28px;
@@ -35,6 +51,6 @@
   transition: color var(--animat);
   &:hover{  
   color: var(--cl-green-light);
-        }
+         }
       }
-}
+  }
