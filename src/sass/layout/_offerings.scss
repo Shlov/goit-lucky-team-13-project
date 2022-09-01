@@ -49,7 +49,9 @@
 
   &__inner {
     @include mq(desk) {
-      @include centered-flex;
+      justify-content: center;
+      align-items: flex-end;
+      display: flex;
     }
   }
 
