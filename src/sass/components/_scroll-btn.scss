@@ -4,7 +4,13 @@
 
 position: sticky;
 left : 47%;
-bottom: 6%;
+bottom: 1%;
+@include mq(tab) {
+  bottom: 5%;
+}
+@include mq(desk) {
+  bottom: 8%;
+}
 
 transform: translateX(-50%);
 
