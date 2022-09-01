@@ -37,11 +37,29 @@
   margin-right: 28px;
   display: flex;
   align-items: center;
+    
+    
   }
 
   &__list-item{
     display: flex;
     align-items: center;
+      &:first-child {
+        border-radius: 30px 0px 0px 0px;
+      }
+      &:last-child {
+        border-radius: 0px 0px 30px 30px;
+      }
+      &:hover, &:focus {
+        @include mq(mob-only) {
+          background-color: var(--cl-green-light);
+          
+        }
+        & > .nav__cls-btn {
+          background-color: var(--cl-green-light);
+        }
+      }
+
     }
 
   &__list-link-footer{
@@ -53,4 +71,13 @@
   color: var(--cl-green-light);
          }
       }
+  }
+
+
+  .nav__list-item:last-child {
+    @include mq(mob-only) {
+      align-items: center;
+      margin-right: 28px;
+      display: flex;
+    }
   }

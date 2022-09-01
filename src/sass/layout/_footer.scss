@@ -3,7 +3,8 @@
 {
     margin-bottom: -50px;   
  &__container
-    {    @media screen and (max-width:768px)
+    {    
+        @media screen and (max-width:768px)
         {   
             background-image:
             url('/src/images/footer/nik/footer-480-1-1x.jpg'),
@@ -21,12 +22,15 @@
 
             background-repeat: no-repeat; 
        }
+
+        
+
+
        @media screen and (min-width:1280px)
        {   
-           background-image:
-           url('/src/images/footer/nik/footer-480-1-1x.jpg'),
-        
-           url('/src/images/footer/nik/footer-768-1-1x.jpg');
+            background-image:
+            url('/src/images/footer/nik/footer-480-1-1x.jpg'),
+            url('/src/images/footer/nik/footer-768-1-1x.jpg');
 
        
            background-size:
@@ -39,20 +43,20 @@
       
            background-repeat: no-repeat; 
       }
-         min-width: 320px;
+        min-width: 320px;
         padding: 60px 20px;
 
 
-      }    
+    }    
 
 
-    @media screen and (min-width:1280px)
-       {
-        background-image: url('/src/images/footer/nik/footer-1280-1-1x.jpg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 0 100%;
-       }
+    // @media screen and (min-width:1280px)
+    //    {
+    //     background-image: url('/src/images/footer/nik/footer-1280-1-1x.jpg');
+    //     background-repeat: no-repeat;
+    //     background-size: 100%;
+    //     background-position: 0 100%;
+    //    }
 
     &__nav{
         display: flex;

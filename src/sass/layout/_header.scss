@@ -13,11 +13,10 @@
     align-items: center;
 
     &--current {
-      color: var(--cl-green-light);
       @include mq(tab) {
+        color: var(--cl-green-light);
         position: relative;
       }
-
       @include mq(tab) {
         &::after {
           content: '';

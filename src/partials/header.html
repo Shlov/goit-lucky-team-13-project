@@ -14,18 +14,19 @@
         </button>
         <nav class="site-nav header__nav nav" data-menu>
             <ul class="nav__header lst">
-                <li class="nav__list-item "> <a class="nav__list-link header__nav--current lnk" href="#home"> Home</a></li>
+                <li class="nav__list-item "> <a class="nav__list-link header__nav--current lnk" href="#home"> Home</a>
+                    <button type="button" class="nav__cls-btn" data-menu-close>
+                        <svg class="nav__cls-svg img" width="24" height="24">
+                            <use href="./images/symbol-hero.svg#cls-menu"></use>
+                        </svg>
+                    </button></li>
                 <li class="nav__list-item "><a class="nav__list-link lnk" href="#About"> About</a></li>
                 <li class="nav__list-item "><a class="nav__list-link lnk" href="#Service"> Service</a></li>
                 <li class="nav__list-item "><a class="nav__list-link lnk" href="#Menu"> Menu</a></li>
                 <li class="nav__list-item "><a class="nav__list-link lnk" href="#Contact"> Contact</a></li>
             </ul>
             <!-- Close menu btn -->
-            <button type="button" class="nav__cls-btn" data-menu-close>
-                <svg class="nav__cls-svg img" width="24" height="24">
-                    <use href="./images/symbol-hero.svg#cls-menu"></use>
-                </svg>
-            </button>
+            
             <!-- ^^^^^^^^^^^^^^ -->
             <button type="button" class="header__order-btn button" data-modal-open>
             Order Now

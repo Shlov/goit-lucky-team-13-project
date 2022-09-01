@@ -41,7 +41,11 @@
         z-index: 1000;
     }
     &:hover{  
-        color: var(--cl-green-light);
+        @include mq(tab){
+            color: var(--cl-green-light);
+
+        }
+
     }
 }
 
