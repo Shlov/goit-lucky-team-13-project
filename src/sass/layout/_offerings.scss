@@ -1,44 +1,54 @@
 .offerings {
   
   // mobile screen 320px
+  
   background-image: url(../images/offerings/bg-offerings@1x_320.png);
+  // background-image: -webkit-image-set(url(../images/offerings/bg-offerings@1x_320.webp) 1x);
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/offerings/bg-offerings@2x_320.png);
+    // background-image: -webkit-image-set(url(../images/offerings/bg-offerings@2x_320.webp) 2x);
   }
+
 
   // mobile screen 480px
   @include mq(mob-only) {
     background-image: url(../images/offerings/bg-offerings@1x_480.png);
+    // background-image: -webkit-image-set(url(../images/offerings/bg-offerings@1x_480.webp) 1x);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/offerings/bg-offerings@2x_480.png);
+      // background-image: -webkit-image-set(url(../images/offerings/bg-offerings@2x_480.webp) 2x);
     }
   }
 
   // tablet screen 768px
   @include mq(tab) {
     background-image: url(../images/offerings/bg-offerings@1x_768.png);
+    // background-image: -webkit-image-set(url(../images/offerings/bg-offerings@1x_768.webp) 1x);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/offerings/bg-offerings@2x_768.png);
+      // background-image: -webkit-image-set(url(../images/offerings/bg-offerings@2x_768.webp) 2x);
     }
   }
 
   // desktop screen 1280px
   @include mq(desk) {
     background-image: url(../images/offerings/bg-offerings@1x_1280.png);
+    // background-image: -webkit-image-set(url(../images/offerings/bg-offerings@1x_1280.webp) 1x);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/offerings/bg-offerings@2x_1280.png);
+      // background-image: -webkit-image-set(url(../images/offerings/bg-offerings@2x_1280.webp) 2x);
     }
   }
 
